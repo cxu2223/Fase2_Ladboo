@@ -23,9 +23,84 @@
     </nav>
     </div>
 </header>
+
+    <!--       DIV PARA TITULO             -->
+
+    <div class="titulo">
+        <div class="titulo-textos">
+          <h1>FORMULARI</h1>
+        </div>
+      </div>
+    <!--      Form formulari-labdoo           -->
+    <form class="form">
+        <fieldset class="dades-personals">
+            <legend>Dades personals</legend>
+            <table class="tabla-dades-personals">
+                <tr>
+                    <td><label for="nom">Nom</label></td>
+                    <td><label for="cognom">Cognom</label><br></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="nom"><br></td>
+                    <td><input type="text" name="cognom"><br></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset class="dades-contacte">
+            <legend>Dades de contacte</legend>
+            <table class="tabla-dades-contacte">
+                <tr>
+                    <td><label for="telefon">Telèfon</label></td>
+                    <td><label for="correu">Correu electrònic</label></td>
+                </tr>
+                <tr>
+                    <td><input type="tel" name="telefon"><br></td>
+                    <td><input type="email" name="correu"><br></td>
+                </tr>
+            </table>         
+        </fieldset>
+        <fieldset class="detalls">
+            <legend>Detalls</legend>
+            <table class="tabla-detalls">
+                <tr>
+                    <td><label for="ordinadors">Número d'ordinadors de la petició</label></td>
+                    <td><label for="connexió">Connexió per cable</label></td>
+                    <td><label for="connexió">Connexió per WiFi</label></td>
+                    <td><label for="sales">Número de sales que s'utilitzaran a la instal·lació</label></td>
+                </tr>
+                <tr>
+                    <td><input type="number" name="ordinadors"><br></td>
+                    <td><input type="checkbox" name="connexió" value="Cable"></td>
+                    <td><input type="checkbox" name="connexió" value="Wifi"></td>
+                    <td>
+                        <select name="sales">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="comentaris">Comentaris</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="comentaris"></td>
+                </tr>
+            </table>     
+        </fieldset>
+    </form>
+  
     <!--           Footer           -->
 <footer>
      <p>Hecho por Grupo1</p>
 </footer>
+
 </body>
 </html>

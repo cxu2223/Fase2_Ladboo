@@ -1,6 +1,6 @@
 
 body {
-    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
     margin: 0;
     padding: 0;
 }
@@ -70,8 +70,8 @@ footer {
 }
 
 .icono-navbar {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 .active {
@@ -87,7 +87,8 @@ footer {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
-  height: 700px;
+  height: 800px;
+  height: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -245,6 +246,7 @@ footer {
   background-color: #DBE2EF;
   display: flex;
   flex-wrap: wrap;
+  padding: 50px 20px 20px 20px;
 }
 
 /*                    DIV enuciat-fase                             */
@@ -292,14 +294,14 @@ footer {
 /*                          Nav retos                      */
 .nav-retos {
   width: 20%;
+
   display: flex;
   height: auto;
   color: #112D4E;
   border-radius: 20px;
   padding: 15px;
-  margin-bottom: 5%;
   margin-left: 11px;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .ul-reto {
@@ -317,7 +319,7 @@ footer {
   border-radius: 20px;
   width: 100%;
   margin: 0px 0px 40px 0px;
-  border: 2px solid #9085BC;
+  border: 3px solid #9085BC;
   padding: 10px 6px 10px 6px;
 }
 
@@ -325,7 +327,7 @@ footer {
   display: flex;
   color: #112D4E;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: bolder;
   border-radius: 20px;
   text-transform: uppercase;
@@ -337,7 +339,7 @@ footer {
   border: 2px solid #DBE2EF;
   background-color: #9085BC;
 }
-/*                      Lista de enuciat                    */
+/*                      Lista de enunciat                    */
 
 .enunciat-lista {
   font-size: 21px;
@@ -351,4 +353,21 @@ footer {
   list-style: none;
   text-align: justify;
   padding-bottom: 15px;
+}
+
+
+/*                Formulari                             */
+.form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  background: #DBE2EF;
+  border-radius: 10px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+fieldset {
+  border-radius: 10px;
+  padding: 20px;
 }
