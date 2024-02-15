@@ -1,6 +1,6 @@
 
 body {
-    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
     margin: 0;
     padding: 0;
 }
@@ -70,8 +70,8 @@ footer {
 }
 
 .icono-navbar {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 .active {
@@ -245,6 +245,7 @@ footer {
   background-color: #DBE2EF;
   display: flex;
   flex-wrap: wrap;
+  padding: 50px 20px 20px 20px;
 }
 
 /*                    DIV enuciat-fase                             */
@@ -301,7 +302,6 @@ footer {
   margin-left: 1%;
   margin-top: 10%;
 }
-
 .ul-reto {
   list-style-type: none;
   margin: 0;
@@ -337,7 +337,7 @@ footer {
   border: 2px solid #DBE2EF;
   background-color: #9085BC;
 }
-/*                      Lista de enuciat                    */
+/*                      Lista de enunciat                    */
 
 .enunciat-lista {
   font-size: 21px;
@@ -351,4 +351,21 @@ footer {
   list-style: none;
   text-align: justify;
   padding-bottom: 15px;
+}
+
+
+/*                Formulari                             */
+.form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  background: #DBE2EF;
+  border-radius: 10px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+fieldset {
+  border-radius: 10px;
+  padding: 20px;
 }
