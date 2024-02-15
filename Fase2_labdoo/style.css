@@ -1,5 +1,6 @@
+
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: system-ui, 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -27,56 +28,62 @@ footer {
     height: 120px;
 }
 /*       Navbar          */
-.image_botton {
-    width: 75px;
-    height: 75px;
+.container {
+  display: flex;
 }
 
-.menu_botton {
-    overflow: hidden;
-    float: right;
-  }
-  
-.botton {
-    border: none;
-    background-color: inherit;
-  }
+.navbar {
+  display: flex;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
 
-.menu-content {
-    display: none;
-    background-color: #f9f9f9;
-    width: 200px;
-    position: absolute;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    right: 0;
-  }
-  
-.menu-content a {
-    color: #112D4E;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    font-size: 20px;
-  }
-  
-.menu-content a:hover {
-    background-color: #DBE2EF;
-  }
-  
-.menu_botton:hover .menu-content {
-    display: block;
-  }
+.nav-links {
+  display: flex;
+  gap: 32px;
+  margin: 0px;
+}
 
-/*Section enuciat*/
-.s-enunciat {
+.nav-link {
+  list-style: none;
+  cursor: pointer;
+  padding: 5px 20px 5px 20px;
+  margin: 0px;
+  color: #DBE2EF;
+  border-radius: 10px 10px 0px 0px;
+}
+
+
+.nav-link:hover:not(.active) {
+  background-color: #3F72AF;
+  color: #fff;
+}
+
+.icono-navbar {
+  width: 50px;
+  height: 50px;
+}
+
+.active {
+  list-style: none;
+  cursor: pointer;
+  padding: 5px 20px 5px 20px;
+  background-color: #3F72AF;
+  border-radius: 10px 10px 0px 0px;
+}
+
+
+/*     Section enuciat      */
+.s-enunciat-labdoo {
   padding: 20px;
   background-color: #3F72AF;
   display: flex;
   flex-flow: column;
 }
-/*Section enuciat-labdoo*/
+/*    DIV enuciat-labdoo    */
 .headerlabdoo {
   background-color: #112D4E;
   color: #DBE2EF;
@@ -84,7 +91,7 @@ footer {
   margin-bottom: 10px;
   font-weight: bolder;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   padding: 15px 0px 15px 0px;
 }
 .headerlabdoo h2 {
@@ -95,7 +102,6 @@ footer {
 .enunciat-labdoo {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
     height: 20%;
     background-color: #DBE2EF;
     text-align: left;
@@ -104,7 +110,6 @@ footer {
     border-radius: 20px;
     padding: 15px;
     margin-bottom: 5%;
-    margin-left: 2.75%;
 }
 .div1-labdoo {
   display: flex;
@@ -117,7 +122,7 @@ footer {
 .enunciat-labdoo h2 {
   font-weight: bolder;
   text-decoration: underline;
-  font-size:  38px;
+  font-size:  30px;
   font-weight: bold;
   width: 100%;
   height: 20%;
@@ -143,7 +148,15 @@ footer {
   width: 100%;
   height: 100%;
 }
-/*   Section enuciat-fase    */
+/*    Section enuciat-fase  */
+.s-enunciat-fase {
+  padding: 20px;
+  background-color: #3F72AF;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*   DIV enuciat-fase    */
 .headerfase {
   background-color: #112D4E;
   color: #DBE2EF;
@@ -151,8 +164,9 @@ footer {
   margin-bottom: 10px;
   font-weight: bolder;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   padding: 15px 0px 15px 0px;
+  width: 100%;
 }
 .headerfase h2 {
   margin: 0px;
@@ -183,4 +197,39 @@ footer {
   text-align: justify;
   line-height: 30px;
   max-width: 99%;
+}
+
+/*  Nav retos */
+.nav-retos {
+  width: 25%;
+  display: flex;
+  height: 20%;
+  background-color: #DBE2EF;
+  color: #112D4E;
+  border-radius: 20px;
+  padding: 15px;
+  margin-bottom: 5%;
+  margin-left: 5px;
+}
+.ul-reto {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.li-reto a {
+  display: flex;
+  color: #112D4E;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bolder;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.li-reto a:hover {
+  background-color: #3F72AF;
+  color: #F9F7F7;
 }
