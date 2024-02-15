@@ -1,14 +1,20 @@
 
 body {
-    font-family: system-ui, 'Open Sans', sans-serif;
+    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
     margin: 0;
     padding: 0;
 }
 
-/*    Header y footer     */
-header {
-    background-color: #FFFFFF;
-    padding: 10px;
+h1, h2 {
+  font-variant: small-caps;
+}
+
+/*              Header y footer                  */
+.header {
+    background-color: rgba(255, 255, 255, 0.60);
+    position: sticky;
+    width: 100%;
+    top: 0%;
 }
 
 footer {
@@ -24,21 +30,21 @@ footer {
 }
 
 .logo_labdoo {
-    width: 1000px;
-    height: 120px;
+    width: 500px;
+    height: 60px;
 }
-/*       Navbar          */
+/*                 Navbar                    */
 .container {
   display: flex;
 }
 
 .navbar {
   display: flex;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.6);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   width: 100%;
   height: auto;
-  justify-content: center;
+  justify-content: right;
 }
 
 .nav-links {
@@ -54,11 +60,12 @@ footer {
   margin: 0px;
   color: #DBE2EF;
   border-radius: 10px 10px 0px 0px;
+  transition: background-color .3s;
 }
 
 
-.nav-link:hover:not(.active) {
-  background-color: #3F72AF;
+.nav-link:hover {
+  background-color: #9085BC;
   color: #fff;
 }
 
@@ -71,22 +78,106 @@ footer {
   list-style: none;
   cursor: pointer;
   padding: 5px 20px 5px 20px;
-  background-color: #3F72AF;
+  background-color: #E0DDF0;
   border-radius: 10px 10px 0px 0px;
 }
+/*            titulo                */
+.titulo {
+  background-image: url(images/mapamundial-labdoo.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.titulo-textos {
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: bolder;
+  background-color: rgba(16, 44, 75, 0.861);
+  width: 50%;
+  height: 20%;
+  text-align: center;
+  border-radius: 10px;
+}
 
-/*     Section enuciat      */
+/*                    sustainable                         */
+.sustainable {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #DBE2EF;
+  width: 100%;
+  margin: 0px;
+  justify-content: center;
+}
+.gif-sus4, .gif-sus5, .gif-sus9, .gif-sus10, .gif-sus11, .gif-sus12, .gif-sus15, .gif-sus17 {
+  width: 10%;
+  margin: 1%;
+  height: auto;
+  border-radius: 10px;
+}
+.gif-sus4:hover {
+  -webkit-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
+  -moz-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
+  box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
+  content: url(gif/goal-4.gif);
+}
+.gif-sus5:hover {
+  -webkit-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
+  -moz-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
+  box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
+  content: url(gif/goal-5.gif);
+}
+.gif-sus9:hover {
+  -webkit-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
+  -moz-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
+  box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
+  content: url(gif/goal-9.gif)
+}
+.gif-sus10:hover {
+  -webkit-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
+  -moz-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
+  box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
+  content: url(gif/goal-10.gif);
+}
+.gif-sus11:hover {
+  -webkit-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
+  -moz-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
+  box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
+  content: url(gif/goal-11.gif);
+}
+.gif-sus12:hover {
+  -webkit-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
+  -moz-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
+  box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
+  content: url(gif/goal-12.gif);
+}
+.gif-sus15:hover {
+  -webkit-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
+  -moz-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
+  box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
+  content: url(gif/goal-15.gif);
+}
+.gif-sus17:hover {
+  -webkit-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
+  -moz-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
+  box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
+  content: url(gif/goal-17.gif);
+}
+/*                   Section enuciat                      */
 .s-enunciat-labdoo {
-  padding: 20px;
-  background-color: #3F72AF;
+  padding: 35px 20px 20px 20px;
+  background-color: #DBE2EF;
   display: flex;
   flex-flow: column;
 }
 /*    DIV enuciat-labdoo    */
 .headerlabdoo {
   background-color: #112D4E;
-  color: #DBE2EF;
+  color: #F9F7F7;
   border-radius: 20px;
   margin-bottom: 10px;
   font-weight: bolder;
@@ -104,13 +195,12 @@ footer {
     flex-wrap: wrap;
     height: 20%;
     background-color: #DBE2EF;
-    text-align: left;
-    font-size: 16px;
     color: #112D4E;
     border-radius: 20px;
     padding: 15px;
-    margin-bottom: 5%;
+    margin-bottom: 10px;
 }
+
 .div1-labdoo {
   display: flex;
   width: 70%;
@@ -118,11 +208,11 @@ footer {
   flex-direction: column;
 }
 
-/*Section enuciat-labdoo textos*/
+/*                Section enuciat-labdoo textos                   */
 .enunciat-labdoo h2 {
   font-weight: bolder;
   text-decoration: underline;
-  font-size:  30px;
+  font-size:  42px;
   font-weight: bold;
   width: 100%;
   height: 20%;
@@ -133,13 +223,14 @@ footer {
   text-align: justify;
   line-height: 30px;
   max-width: 99%;
+  font-size: 21px;
 }
 .p1-labdoo {
   width: 100%;
   height: 80%;
 }
 
-/*Section enuciat-labdoo imagen*/
+/*                Section enuciat-labdoo imagen                     */
 .imatgelabdoo {
   width: 30%;
   height: 30%;
@@ -148,15 +239,15 @@ footer {
   width: 100%;
   height: 100%;
 }
-/*    Section enuciat-fase  */
+/*                  Section enuciat-fase                               */
 .s-enunciat-fase {
   padding: 20px;
-  background-color: #3F72AF;
+  background-color: #DBE2EF;
   display: flex;
   flex-wrap: wrap;
 }
 
-/*   DIV enuciat-fase    */
+/*                    DIV enuciat-fase                             */
 .headerfase {
   background-color: #112D4E;
   color: #DBE2EF;
@@ -174,21 +265,19 @@ footer {
 }
 .enunciat-fase {
   display: flex;
-  width: 70%;
+  width: 75%;
   height: 20%;
   background-color: #DBE2EF;
-  text-align: left;
-  font-size: 16px;
   color: #112D4E;
-  border-radius: 20px;
   padding: 15px;
-  margin-bottom: 5%;
+  flex-flow: column;
+  border-bottom: 5px solid #112D4E;
 }
-/*Section enuciat-fase textos*/
+/*                 Section enuciat-fase textos              */
 .enunciat-fase h2 {
   font-weight: bolder;
   text-decoration: underline;
-  font-size:  38px;
+  font-size:  42px;
   font-weight: bold;
 }
 
@@ -197,39 +286,69 @@ footer {
   text-align: justify;
   line-height: 30px;
   max-width: 99%;
+  font-size: 21px;
 }
 
-/*  Nav retos */
+/*                          Nav retos                      */
 .nav-retos {
-  width: 25%;
+  width: 20%;
   display: flex;
-  height: 20%;
-  background-color: #DBE2EF;
+  height: auto;
   color: #112D4E;
   border-radius: 20px;
   padding: 15px;
   margin-bottom: 5%;
-  margin-left: 5px;
+  margin-left: 11px;
+  margin-top: 10%;
 }
+
 .ul-reto {
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.li-reto {
+  background-color: #DBE2EF;
+  border-radius: 20px;
+  width: 100%;
+  margin: 0px 0px 40px 0px;
+  border: 2px solid #9085BC;
+  padding: 10px 6px 10px 6px;
 }
 
 .li-reto a {
   display: flex;
   color: #112D4E;
-  padding: 8px 16px;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bolder;
   border-radius: 20px;
-  margin-bottom: 30px;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
 }
 
-.li-reto a:hover {
-  background-color: #3F72AF;
-  color: #F9F7F7;
+.li-reto:hover {
+  border: 2px solid #DBE2EF;
+  background-color: #9085BC;
+}
+/*                      Lista de enuciat                    */
+
+.enunciat-lista {
+  font-size: 21px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.enunciat-lista2 {
+  font-size: 18px;
+  font-weight: normal;
+  list-style: none;
+  text-align: justify;
+  padding-bottom: 15px;
 }
