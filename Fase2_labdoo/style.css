@@ -1,27 +1,27 @@
+/*              Fuente            */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-family: "Poppins";
     margin: 0;
     padding: 0;
 }
 
-h1, h2 {
-  font-variant: small-caps;
-}
 
 /*              Header y footer                  */
 .header {
-    background-color: rgba(255, 255, 255, 0.60);
+    background-color: #ceb6ba;
     position: sticky;
     width: 100%;
     top: 0%;
 }
 
 footer {
-    background-color: #112D4E;
+    background-color: #C5979D;
     padding: 10px;
     text-align: left;
-    color: #F9F7F7;
+    color: #0F0A0A;
 }
 
 .divlogo {
@@ -40,8 +40,7 @@ footer {
 
 .navbar {
   display: flex;
-  background: rgba(255, 255, 255, 0.6);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background: #ceb6ba;
   width: 100%;
   height: auto;
   justify-content: right;
@@ -65,7 +64,7 @@ footer {
 
 
 .nav-link:hover {
-  background-color: #9085BC;
+  background-color: #F6AA1C;
   color: #fff;
 }
 
@@ -78,12 +77,11 @@ footer {
   list-style: none;
   cursor: pointer;
   padding: 5px 20px 5px 20px;
-  background-color: #E0DDF0;
+  background-color: #fdd385;
   border-radius: 10px 10px 0px 0px;
 }
 /*            titulo                */
-.titulo {
-  background-image: url(images/mapamundial-labdoo.png);
+.titulo, .titulo-F, .titulo-E {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
@@ -93,13 +91,25 @@ footer {
   align-items: center;
 }
 
+.titulo {
+  background-image: url(images/banner-index.png);
+}
+
+.titulo-F {
+  background-image: url(images/banner-forumlario.png);
+}
+
+.titulo-E {
+  background-image: url(images/banner-equipo.jpg);
+}
+
 .titulo-textos {
+  font-family: "Oswald";
   font-size: 30px;
-  color: #ffffff;
+  color: #422040;
   font-weight: bolder;
-  background-color: rgba(16, 44, 75, 0.861);
-  width: 50%;
-  height: 20%;
+  background-color: #F6AA1C;
+  width: 40%;
   text-align: center;
   border-radius: 10px;
 }
@@ -108,7 +118,7 @@ footer {
 .sustainable {
   display: flex;
   flex-wrap: wrap;
-  background-color: #DBE2EF;
+  background-color: #F8F8F1;
   width: 100%;
   margin: 0px;
   justify-content: center;
@@ -170,14 +180,14 @@ footer {
 /*                   Section enuciat                      */
 .s-enunciat-labdoo {
   padding: 35px 20px 20px 20px;
-  background-color: #DBE2EF;
+  background-color: #F8F8F1;
   display: flex;
   flex-flow: column;
 }
 /*    DIV enuciat-labdoo    */
 .headerlabdoo {
-  background-color: #112D4E;
-  color: #F9F7F7;
+  background-color: #422040;
+  color: #F6AA1C;
   border-radius: 20px;
   margin-bottom: 10px;
   font-weight: bolder;
@@ -188,14 +198,14 @@ footer {
 .headerlabdoo h2 {
   margin: 0px;
   padding: 0px;
+  font-family: "Oswald";
 }
 
 .enunciat-labdoo {
     display: flex;
     flex-wrap: wrap;
     height: 20%;
-    background-color: #DBE2EF;
-    color: #112D4E;
+    color: #0F0A0A;
     border-radius: 20px;
     padding: 15px;
     margin-bottom: 10px;
@@ -216,6 +226,8 @@ footer {
   font-weight: bold;
   width: 100%;
   height: 20%;
+  color: #422040;
+  font-family: "Oswald";
 }
 
 .enunciat-labdoo p {
@@ -242,7 +254,7 @@ footer {
 /*                  Section enuciat-fase                               */
 .s-enunciat-fase {
   padding: 2%;
-  background-color: #DBE2EF;
+  background-color: #F8F8F1;
   display: flex;
   flex-wrap: wrap;
   padding: 50px 20px 20px 20px;
@@ -250,8 +262,8 @@ footer {
 
 /*                    DIV enuciat-fase                             */
 .headerfase {
-  background-color: #112D4E;
-  color: #DBE2EF;
+  background-color: #422040;
+  color: #F6AA1C;
   border-radius: 20px;
   margin-bottom: 10px;
   font-weight: bolder;
@@ -263,16 +275,17 @@ footer {
 .headerfase h2 {
   margin: 0px;
   padding: 0px;
+  font-family: "Oswald";
 }
 .enunciat-fase {
   display: flex;
-  width: 75%;
+  width: 70%;
   height: 20%;
-  background-color: #DBE2EF;
-  color: #112D4E;
+  background-color: #F8F8F1;
+  color: #0F0A0A;
   padding: 2%;
   flex-flow: column;
-  border-bottom: 5px solid #112D4E;
+  border-bottom: 5px solid #422040;
 }
 /*                 Section enuciat-fase textos              */
 .enunciat-fase h2 {
@@ -280,6 +293,9 @@ footer {
   text-decoration: underline;
   font-size:  38px;
   font-weight: bold;
+  color: #422040;
+  text-transform: uppercase;
+  font-family: "Oswald";
 }
 
 .enunciat-fase p {
@@ -292,7 +308,7 @@ footer {
 
 /*                          Nav retos                      */
 .nav-retos {
-  width: 16%;
+  width: 20%;
   display: flex;
   height: auto;
   color: #112D4E;
@@ -300,7 +316,7 @@ footer {
   padding: 2%;
   margin-bottom: 5%;
   margin-left: 1%;
-  margin-top: 10%;
+  margin-top: 2%;
 }
 .ul-reto {
   list-style-type: none;
@@ -310,20 +326,19 @@ footer {
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .li-reto {
-  background-color: #DBE2EF;
   border-radius: 20px;
   width: 100%;
-  margin: 5% 0px 30% 0px;
-  border: 2px solid #9085BC;
+  border: 3px solid #422040;
   padding: 5%;
 }
 
 .li-reto a {
   display: flex;
-  color: #112D4E;
+  color: #422040;
   text-decoration: none;
   font-size: 18px;
   font-weight: bolder;
@@ -334,15 +349,17 @@ footer {
 }
 
 .li-reto:hover {
-  border: 2px solid #DBE2EF;
-  background-color: #9085BC;
+  border: 3px solid #422040;
+  background-color: #C5979D;
 }
+
 /*                      Lista de enunciat                    */
 
 .enunciat-lista {
   font-size: 21px;
   font-weight: bold;
   text-align: justify;
+  color: #F6AA1C;
 }
 
 .enunciat-lista2 {
@@ -355,17 +372,97 @@ footer {
 
 
 /*                Formulari                             */
+.section-form {
+  background: #d8bec0;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
 .form {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
   padding: 10px;
-  background: #DBE2EF;
   border-radius: 10px;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  background: #d4b8bb;
 }
 
 fieldset {
   border-radius: 10px;
   padding: 20px;
+  border: 2px solid #F6AA1C;
+}
+
+legend {
+  color: #422040;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+table {
+  color: #422040;
+}
+
+
+/*                equipo                             */
+.s-equipo {
+  margin: 0;
+  padding: 0;
+}
+
+.miembro-todos {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  height: 700px;
+  justify-content: space-evenly;
+  padding-bottom: 40px;
+}
+
+.miembro1 {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  text-align: center;
+  border: 3px solid #fdd385;
+  border-radius: 10px;
+}
+
+.miembro1:hover {
+  -webkit-box-shadow: 2px 5px 36px 24px rgba(253,211,133,0.8);
+  -moz-box-shadow: 2px 5px 36px 24px rgba(253,211,133,0.8);
+  box-shadow: 2px 5px 36px 24px rgba(253,211,133,0.8);
+}
+
+.img-miembro1, .img-miembro2, .img-miembro3, .img-miembro4 {
+  width: 100%;
+  height: 48%;
+  border-radius: 10px;
+}
+
+.img-miembro1:hover {
+  content: url(images/ivory.png)
+}
+
+.img-miembro2:hover {
+  content: url(images/chenxiao.png)
+}
+
+.img-miembro3:hover {
+  content: url(images/sergio.png)
+}
+
+.img-miembro4:hover {
+  content: url(images/lucas.png)
+}
+
+.miembro1 h3 {
+  color: #422040;
+}
+
+.descripcion-miembro {
+  padding: 0px 5% 0px 5%;
+  text-align: justify;
+  font-size: 14px;
+  color: #422040;
+  line-height: 21px;
 }
