@@ -62,7 +62,6 @@ footer {
   transition: background-color .3s;
 }
 
-
 .nav-link:hover {
   background-color: #F6AA1C;
   color: #fff;
@@ -129,52 +128,33 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.gif-sus4:hover, .gif-sus5:hover, .gif-sus9:hover, .gif-sus10:hover, .gif-sus11:hover, .gif-sus12:hover, .gif-sus15:hover, .gif-sus17:hover {
+  -webkit-box-shadow: 2px -2px 24px 8px rgba(246,170,28,0.59);
+  -moz-box-shadow: 2px -2px 24px 8px rgba(246,170,28,0.59);
+  box-shadow: 2px -2px 24px 8px rgba(246,170,28,0.59);
+}
 .gif-sus4:hover {
-  -webkit-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
-  -moz-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
-  box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
   content: url(gif/goal-4.gif);
 }
 .gif-sus5:hover {
-  -webkit-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
-  -moz-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
-  box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
   content: url(gif/goal-5.gif);
 }
 .gif-sus9:hover {
-  -webkit-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
-  -moz-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
-  box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
   content: url(gif/goal-9.gif)
 }
 .gif-sus10:hover {
-  -webkit-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
-  -moz-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
-  box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
   content: url(gif/goal-10.gif);
 }
 .gif-sus11:hover {
-  -webkit-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
-  -moz-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
-  box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
   content: url(gif/goal-11.gif);
 }
 .gif-sus12:hover {
-  -webkit-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
-  -moz-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
-  box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
   content: url(gif/goal-12.gif);
 }
 .gif-sus15:hover {
-  -webkit-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
-  -moz-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
-  box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
   content: url(gif/goal-15.gif);
 }
 .gif-sus17:hover {
-  -webkit-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
-  -moz-box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
-  box-shadow: 0px 10px 25px 13px rgba(169,192,217,1);
   content: url(gif/goal-17.gif);
 }
 /*                   Section enuciat                      */
@@ -407,6 +387,7 @@ table {
 .s-equipo {
   margin: 0;
   padding: 0;
+  background: #F8F8F1;
 }
 
 .miembro-todos {
