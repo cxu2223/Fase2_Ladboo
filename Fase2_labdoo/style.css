@@ -15,6 +15,7 @@ body {
     position: sticky;
     width: 100%;
     top: 0%;
+    z-index: 1;
 }
 
 footer {
@@ -22,6 +23,16 @@ footer {
     padding: 10px;
     text-align: left;
     color: #0F0A0A;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+footer p {
+  color: #0F0A0A;
+  font-size: 15px;
+  padding-left: 10px;
+  font-weight: 400;
 }
 
 .divlogo {
@@ -33,6 +44,23 @@ footer {
     width: 500px;
     height: 60px;
 }
+
+.footer-listas {
+  list-style: none;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.footer-lista {
+  padding: 0 20px 0 20px;
+}
+
+.icono-footer {
+  width: 40px;
+  height: 40px;
+}
+
+
 /*                 Navbar                    */
 .container {
   display: flex;
@@ -233,7 +261,6 @@ footer {
 }
 /*                  Section enuciat-fase                               */
 .s-enunciat-fase {
-  padding: 2%;
   background-color: #F8F8F1;
   display: flex;
   flex-wrap: wrap;
@@ -291,12 +318,12 @@ footer {
   width: 20%;
   display: flex;
   height: auto;
-  color: #112D4E;
   border-radius: 20px;
   padding: 2%;
   margin-bottom: 5%;
   margin-left: 1%;
   margin-top: 2%;
+  box-sizing: border-box;
 }
 .ul-reto {
   list-style-type: none;
@@ -311,27 +338,51 @@ footer {
 
 .li-reto {
   border-radius: 20px;
-  width: 100%;
+  width: 85%;
   border: 3px solid #422040;
   padding: 5%;
+  transition: 0.5s;
+  position: relative;
 }
 
 .li-reto a {
   display: flex;
   color: #422040;
   text-decoration: none;
-  font-size: 18px;
+  font-size: auto;
   font-weight: bolder;
   border-radius: 20px;
   text-transform: uppercase;
-  width: 100%;
-  text-align: center;
+  text-align: left;
+  width: auto;
+  word-break: break-word;
 }
 
 .li-reto:hover {
   border: 3px solid #422040;
   background-color: #C5979D;
+  padding-right: 30%;
 }
+
+.li-reto:hover .icono-reto {
+  width: 60px;
+  height: 60px;
+  opacity: 1;
+  display: block;
+}
+
+
+.icono-reto {
+  width: 60px;
+  height: 60px;
+  opacity: 0;
+  transition: 0.5s;
+  position: absolute;
+  top: 7.2px;
+  right: 8px;
+  display: none;
+}
+
 
 /*                      Lista de enunciat                    */
 
@@ -386,8 +437,20 @@ table {
 /*                equipo                             */
 .s-equipo {
   margin: 0;
-  padding: 0;
+  padding: 50px 20px 20px 20px;
   background: #F8F8F1;
+}
+
+.equipo-texto {
+  text-align: justify;
+  line-height: 30px;
+  font-size: 20px;
+  color: #0F0A0A;
+  padding: 0px 30px 25px 30px;
+}
+
+.equipo-listas {
+  list-style: none;
 }
 
 .miembro-todos {
@@ -412,6 +475,7 @@ table {
   -webkit-box-shadow: 2px 5px 36px 24px rgba(253,211,133,0.8);
   -moz-box-shadow: 2px 5px 36px 24px rgba(253,211,133,0.8);
   box-shadow: 2px 5px 36px 24px rgba(253,211,133,0.8);
+  transition-duration: 0.5s;
 }
 
 .img-miembro1, .img-miembro2, .img-miembro3, .img-miembro4 {
@@ -421,7 +485,7 @@ table {
 }
 
 .img-miembro1:hover {
-  content: url(images/ivory.png)
+  content: url(images/ivory.png);
 }
 
 .img-miembro2:hover {
@@ -446,4 +510,21 @@ table {
   font-size: 14px;
   color: #422040;
   line-height: 21px;
+}
+
+
+/*Reto1*/
+
+.retos-enunciat {
+  padding: 20px 20px 0px 20px;
+  margin: 0px;
+  background-color: #F8F8F1;
+}
+
+.enunciat-reto {
+  display: flex;
+  width: 90%;
+  height: 20%;
+  color: #0F0A0A;
+  padding: 2%;
 }
