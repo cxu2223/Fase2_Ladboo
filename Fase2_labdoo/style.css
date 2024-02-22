@@ -441,14 +441,6 @@ table {
   background: #F8F8F1;
 }
 
-.equipo-texto {
-  text-align: justify;
-  line-height: 30px;
-  font-size: 20px;
-  color: #0F0A0A;
-  padding: 0px 30px 25px 30px;
-}
-
 .equipo-listas {
   list-style: none;
 }
@@ -478,6 +470,8 @@ table {
   transition-duration: 0.5s;
 }
 
+/*  Equipo images */
+
 .img-miembro1, .img-miembro2, .img-miembro3, .img-miembro4 {
   width: 100%;
   height: 48%;
@@ -503,6 +497,7 @@ table {
 .miembro1 h3 {
   color: #422040;
 }
+/*Equipo textos*/
 
 .descripcion-miembro {
   padding: 0px 5% 0px 5%;
@@ -512,10 +507,19 @@ table {
   line-height: 21px;
 }
 
+.equipo-texto {
+  text-align: justify;
+  line-height: 30px;
+  font-size: 20px;
+  color: #0F0A0A;
+  padding: 0px 30px 25px 30px;
+}
+
 
 /*Reto1*/
 
-.retos-enunciat {
+/*     Section    */
+.section-retos-enunciat {
   padding: 20px 20px 0px 20px;
   margin: 0px;
   background-color: #F8F8F1;
@@ -523,16 +527,7 @@ table {
   display: flex;
 }
 
-.enunciat-reto1-titulo {
-  font-size: 21px;
-  font-weight: bold;
-  text-align: justify;
-  color: #F6AA1C;
-  width: 100%;
-  padding-left: 5px;
-  margin: 0px;
-  padding-top: 10px;
-}
+/*DIV RETO*/
 
 .enunciat-reto-media {
   width: 45%;
@@ -540,7 +535,7 @@ table {
   color: #0F0A0A;
 }
 
-.foto-meida-div {
+.foto-media-div {
   width: 55%;
   height: auto;
   display: flex;
@@ -554,12 +549,52 @@ table {
   color: #0F0A0A;
 }
 
-.I-topoligia {
-  width: 90%;
-  height: 90%;
+.enunciat-reto-70{
+  width: 65%;
+  height: auto;
 }
 
-.enunciat-reto1-p {
+.foto-30-div {
+  width: 35%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto-100-div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*  Reto Images   */
+
+.I-topologia {
+  width: 90%;
+}
+
+.I-topologia-mixto {
+  width: 70%;
+}
+
+
+
+/*  Reto textos */
+.enunciat-reto-titulo {
+  font-size: 21px;
+  font-weight: bold;
+  text-align: justify;
+  color: #F6AA1C;
+  width: 100%;
+  padding-left: 5px;
+  margin: 0px;
+  padding-top: 10px;
+}
+
+.enunciat-reto-p {
   font-size: 20px;
   font-weight: normal;
   text-align: justify;
@@ -568,8 +603,11 @@ table {
   line-height: 35px;
 }
 
+/*  Index de reto */
+
 .div-index {
   width: 100%;
+  padding-top: 5%;
 }
 
 .ul-index {
@@ -578,26 +616,34 @@ table {
   width: 100%;
   list-style: none;
   justify-content: space-around;
+  padding: 0px;
 }
 
 .li-index {
   width: 25%;
   height: 50%;
   padding: 1%;
-  margin: 1%;
+  margin: 3%;
   text-align: center;
 }
 
 .li-index a {
   border: 2px solid #422040;
-  border-radius: 10px;
-  padding: 2% 35% 2% 35%;
+  border-radius: 20px;
+  padding: 5% 10% 5% 10%;
   text-decoration: none;
   color: #F6AA1C;
   transition: 0.5s;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .li-index a:hover {
   color: #422040;
   background-color: #F6AA1C;
+}
+
+.div-topologia {
+  display: flex;
+  flex-wrap: wrap;
 }
