@@ -378,7 +378,7 @@ footer p {
   opacity: 0;
   transition: 0.5s;
   position: absolute;
-  top: 7.2px;
+  top: 5px;
   right: 8px;
   display: none;
 }
