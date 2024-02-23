@@ -229,7 +229,6 @@ footer p {
 /*                Section enuciat-labdoo textos                   */
 .enunciat-labdoo h2 {
   font-weight: bolder;
-  text-decoration: underline;
   font-size:  38px;
   font-weight: bold;
   width: 100%;
@@ -297,7 +296,6 @@ footer p {
 /*                 Section enuciat-fase textos              */
 .enunciat-fase h2 {
   font-weight: bolder;
-  text-decoration: underline;
   font-size:  38px;
   font-weight: bold;
   color: #422040;
