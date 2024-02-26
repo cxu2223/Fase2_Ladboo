@@ -10,16 +10,16 @@ body {
 
 
 /*              Header y footer                  */
-.header {
+.header, #header {
     background-color: #ceb6ba;
     position: sticky;
     width: 100%;
     top: 0%;
-    z-index: 1;
+    z-index: 3;
 }
 
 footer {
-    background-color: #C5979D;
+    background-color: #ceb6ba;
     padding: 10px;
     text-align: left;
     color: #0F0A0A;
@@ -66,7 +66,7 @@ footer p {
   display: flex;
 }
 
-.navbar {
+.navbar, #navbar {
   display: flex;
   background: #ceb6ba;
   width: 100%;
@@ -359,7 +359,7 @@ footer p {
 .li-reto:hover {
   border: 3px solid #422040;
   background-color: #C5979D;
-  padding-right: 30%;
+  padding-right: 35%;
 }
 
 .li-reto:hover .icono-reto {
@@ -402,23 +402,30 @@ footer p {
 
 /*                Formulari                             */
 .section-form {
-  background: #d8bec0;
+  background: #F8F8F1;
   padding-top: 2%;
   padding-bottom: 2%;
 }
 
 .form {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   padding: 10px;
   border-radius: 10px;
-  background: #d4b8bb;
+  background: #f3e2e3;
 }
 
-fieldset {
+.fieldset {
   border-radius: 10px;
   padding: 20px;
   border: 2px solid #F6AA1C;
+}
+
+.div-formulario{
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  padding-bottom: 60px;
 }
 
 legend {
@@ -427,10 +434,87 @@ legend {
   font-size: 20px;
 }
 
-table {
-  color: #422040;
+.container-formulario {
+  width: 100%;
+  padding: 1% 0%;
 }
 
+.entryarea {
+  position: relative;
+  height: 80x;
+  line-height: 50px;
+}
+
+.input-text, .input-radio {
+  position: absolute;
+  width: 80%;
+  outline: none;
+  font-size: 25px;
+  padding: 0 30px;
+  line-height: 50px;
+  border-radius: 10px;
+  border: 2px solid #422040;
+  background-color: transparent;
+  transition: 0.1s ease;
+  z-index: 1;
+}
+
+.label-line {
+  position: absolute;
+  font-size: 18px;
+  color: #422040;
+  padding: 0 25px;
+  margin: 0 20px;
+  transition: 0.2s ease;
+}
+
+.input-text:focus,
+.input-text:valid,
+.input-radio:focus,
+.input-radio:valid {
+  color: #ef9b00;
+  border: 4px solid #ef9b00;
+}
+
+.input-text:focus + .label-line,
+.input-text:valid + .label-line,
+.input-radio:focus + .label-line,
+.input-radio:valid + .label-line {
+  color: #ef9b00;
+  height: 30px;
+  line-height: 30px;
+  transform: translate(-15px, -16px) scale(0.88);
+  z-index: 1;
+  background-color: #f3e2e3
+}
+ 
+fieldset {
+  margin: 15px 10px 25px 10px;
+}
+
+.subfieldset {
+  width: 40%;
+  outline: none;
+  font-size: 25px;
+  padding: 0 30px;
+  line-height: 50px;
+  border-radius: 10px;
+  border: 2px solid #422040;
+  background-color: transparent;
+  transition: 0.1s ease;
+}
+
+input[type="radio"] {
+  accent-color: yellow;
+}
+
+.subfieldset:hover {
+  border: 3px solid #ef9b00;
+}
+
+.sublegend {
+  padding: 0 15px 0 15px;
+}
 
 /*                equipo                             */
 .s-equipo {
@@ -495,6 +579,7 @@ table {
 .miembro1 h3 {
   color: #422040;
 }
+
 /*Equipo textos*/
 
 .descripcion-miembro {
@@ -566,6 +651,29 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 10%;
+}
+
+.div-topologia {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ul-normativa {
+  padding: 1% 5%;
+  list-style: square;
+  width: 100%;
+}
+
+.div-proposta {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.div-table-proposta {
+  width: 90%;
 }
 
 /*  Reto Images   */
@@ -601,11 +709,53 @@ table {
   line-height: 35px;
 }
 
+.link-reto {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+/*    Table   */
+
+.table-proposta {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table-proposta th, .table-proposta td {
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  padding: 10px;
+}
+
+.table-proposta th {
+  color: #422040;
+  background-color: #f5d08d;
+  font-size: 20px;
+}
+
+.table-proposta tr:hover {
+  background-color: #ceb6bab0;
+}
+
+.table-proposta tr {
+  transition: 0.3s;
+}
+
+.table-proposta tr:nth-child(2) {
+  font-weight: bold;
+  color: #F6AA1C;
+}
+
+.table-proposta td:nth-child(1) {
+  text-align: left;
+}
+
 /*  Index de reto */
 
 .div-index {
   width: 100%;
-  padding-top: 5%;
+  padding: 5% 0px;
 }
 
 .ul-index {
@@ -639,9 +789,4 @@ table {
 .li-index a:hover {
   color: #422040;
   background-color: #F6AA1C;
-}
-
-.div-topologia {
-  display: flex;
-  flex-wrap: wrap;
 }

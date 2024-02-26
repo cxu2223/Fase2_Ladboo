@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/boladelmundo.png">
     <title>Projecte Labdoo</title>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <!--          Header          -->
-<header class="header">
+<header class="header" id="header">
     <div class="container">
     <div class="divlogo">
-        <img src="images/logo-labdoo.png" alt="Logo Labdoo" class="logo_labdoo">
+        <a href="https://www.labdoo.org/es/" target="_blank"><img src="images/logo-labdoo.png" alt="Logo Labdoo" class="logo_labdoo"></a>
     </div>
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <ul class="nav-links">
             <li class="nav-link"><a href="index.html"><img src="images/homepage.png" class="icono-navbar"></a></li>
             <li class="active"><a href="formulario.html"><img src="images/formulario.png" class="icono-navbar"></a></li>      
@@ -34,45 +35,103 @@
     <!--      Form formulari-labdoo           -->
     <section class="section-form">
     <form class="form">
-        <fieldset class="dades-personals">
+        <fieldset class="fieldset">
             <legend>Dades personals</legend>
-            <table class="tabla-dades-personals">
-                <tr>
-                    <td><label for="nom">Nom</label></td>
-                    <td><label for="cognom">Cognom</label><br></td>
-                </tr>
-                <tr>
-                    <td><input type="text" name="nom"><br></td>
-                    <td><input type="text" name="cognom"><br></td>
-                </tr>
-            </table>
+            <div class="div-formulario">
+                <div class="container-formulario">
+                    <div class="entryarea">
+                        <input type="text" class="input-text" required>
+                        <div class="label-line">Escriu el teu nom</div>
+                    </div>
+                </div>
+                <div class="container-formulario">
+                    <div class="entryarea">
+                        <input type="text" class="input-text" required>
+                        <div class="label-line">Escriu el teu cognom</div>
+                    </div>
+                </div>
+            </div>
+            <div class="div-formulario">
+                <div class="container-formulario">  
+                    <div class="entryarea">
+                        <input type="text" class="input-text" required>
+                        <div class="label-line">Escriu el teu país</div>
+                    </div>
+                </div>
+                <div class="container-formulario">  
+                    <div class="entryarea">
+                        <input type="text" class="input-text" required>
+                        <div class="label-line">Escriu la teva ciutat</div>
+                    </div>
+                </div>
+        </div>
         </fieldset>
-        <fieldset class="dades-contacte">
+        <fieldset class="fieldset">
             <legend>Dades de contacte</legend>
-            <table class="tabla-dades-contacte">
-                <tr>
-                    <td><label for="telefon">Telèfon</label></td>
-                    <td><label for="correu">Correu electrònic</label></td>
-                </tr>
-                <tr>
-                    <td><input type="tel" name="telefon"><br></td>
-                    <td><input type="email" name="correu"><br></td>
-                </tr>
-            </table>         
+            <div class="div-formulario">
+                <div class="container-formulario">  
+                    <div class="entryarea">
+                        <input type="text" inputmode="numeric" class="input-text" required>
+                        <div class="label-line">Escriu el teu telèfon</div>
+                    </div>
+                </div>
+                <div class="container-formulario">  
+                    <div class="entryarea">
+                        <input type="text" class="input-text" required>
+                        <div class="label-line">Escriu el teu correu electrònic</div>
+                    </div>
+                </div>
+            </div>        
         </fieldset>
-        <fieldset class="detalls">
+        <fieldset class="fieldset">
             <legend>Detalls</legend>
+            <div class="div-formulario">
+                <div class="container-formulario">  
+                    <div class="entryarea">
+                        <input type="number" class="input-text" required>
+                        <div class="label-line">Número d'ordinadors de la petició</div>
+                    </div>
+                </div>
+            </div>
+            <div class="div-formulario">
+                <div class="container-formulario">  
+                    <div class="entryarea">
+                        <input type="text" class="input-text" required>
+                        <div class="label-line">Comentaris</div>
+                    </div>
+                </div>
+            </div>
+            <fieldset class="subfieldset">
+                <legend class="sublegend">Tipus de connexió</legend>
+                <input type="radio" name="connexio" required>
+                <label for="cable">Connexió per cable</label><br>
+                <input type="radio" name="connexio" required>
+                <label for="wifi">Connexió per WiFi</label>
+            </fieldset>
+            <div class="div-formulario">
+                <div class="container-formulario">
+                    <div class="entryarea">  
+                        <div class="input-text">
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option selected></option>    
+                            <option value="Cable">Connexió per cable</option>
+                            <option value="Wifi">Connexió per Wifi</option>
+                            </select>
+                        </div>
+                        <div class="label-line">Tipus de connexió</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <table class="tabla-detalls">
                 <tr>
-                    <td><label for="ordinadors">Número d'ordinadors de la petició</label></td>
-                    <td><label for="connexió">Connexió per cable</label></td>
-                    <td><label for="connexió">Connexió per WiFi</label></td>
+
+                    <td></td>
+                    <td></td>
                     <td><label for="sales">Número de sales que s'utilitzaran a la instal·lació</label></td>
                 </tr>
                 <tr>
-                    <td><input type="number" name="ordinadors"><br></td>
-                    <td><input type="checkbox" name="connexió" value="Cable"></td>
-                    <td><input type="checkbox" name="connexió" value="Wifi"></td>
                     <td>
                         <select name="sales">
                             <option value="1">1</option>
@@ -87,12 +146,6 @@
                             <option value="10">10</option>
                         </select>
                     </td>
-                </tr>
-                <tr>
-                    <td><label for="comentaris">Comentaris</label></td>
-                </tr>
-                <tr>
-                    <td><input type="text" name="comentaris"></td>
                 </tr>
             </table>     
         </fieldset>
