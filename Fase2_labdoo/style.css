@@ -80,17 +80,17 @@ footer p {
   margin: 0px;
 }
 
-.nav-link {
+.nav-link, .nav-link-d {
   list-style: none;
   cursor: pointer;
   padding: 5px 20px 5px 20px;
   margin: 0px;
   color: #DBE2EF;
   border-radius: 10px 10px 0px 0px;
-  transition: background-color .3s;
+  transition: 0.3s;
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link-d:hover {
   background-color: #F6AA1C;
   color: #fff;
 }
@@ -107,6 +107,37 @@ footer p {
   background-color: #fdd385;
   border-radius: 10px 10px 0px 0px;
 }
+
+.nav-link-d:hover .dropdown-content{
+  display: block;
+}
+
+.dropdown-content {
+  margin-top: 11px;
+  display: none;
+  background-color: #F6AA1C;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  width: 20%;
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  color: #212120;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #f2e9e9;
+}
+
+
 /*            titulo                */
 .titulo, .titulo-F, .titulo-E {
   background-repeat: no-repeat;
@@ -668,22 +699,59 @@ input[type="radio"] {
 .div-proposta {
   width: 100%;
   display: flex;
-  flex-flow: column;
+  flex-wrap: wrap;
+  margin: 5% 0%;
+}
+
+.div-posicio {
+  width: 100%;
+  margin: 5% 0%;
+}
+
+.div-planol {
+  width: 100%;
+  display: flex;
   justify-content: center;
 }
 
-.div-table-proposta {
-  width: 90%;
+.div-planol-pr{
+  width: 30%;
+}
+
+.div-futuro-a {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5% 0%;
+  justify-content: center;
+}
+
+.div-media-futuro{
+  display: flex;
+  width: 45%;
+  flex-flow: column;
 }
 
 /*  Reto Images   */
 
 .I-topologia {
   width: 90%;
+  border-radius: 10px;
 }
 
 .I-topologia-mixto {
   width: 70%;
+  border-radius: 10px;
+}
+
+.planol-reto1 {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.I-planol-pr {
+  width: 100%;
+  border-radius: 10px;
 }
 
 
@@ -696,7 +764,7 @@ input[type="radio"] {
   color: #F6AA1C;
   width: 100%;
   padding-left: 5px;
-  margin: 0px;
+  margin-top: 10px;
   padding-top: 10px;
 }
 
@@ -714,12 +782,22 @@ input[type="radio"] {
   text-decoration: underline;
 }
 
+.enunciat-reto-p-a {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px;
+  padding-left: 5px;
+  line-height: 35px;
+}
+
 /*    Table   */
 
 .table-proposta {
-  width: 100%;
+  width: 65%;
   border-collapse: collapse;
   margin-top: 20px;
+  margin-right: 5%;
 }
 
 .table-proposta th, .table-proposta td {
@@ -732,6 +810,7 @@ input[type="radio"] {
   color: #422040;
   background-color: #f5d08d;
   font-size: 20px;
+  border-radius: 10px;
 }
 
 .table-proposta tr:hover {
@@ -740,6 +819,7 @@ input[type="radio"] {
 
 .table-proposta tr {
   transition: 0.3s;
+  border-radius: 10px;
 }
 
 .table-proposta tr:nth-child(2) {

@@ -18,9 +18,16 @@
     </div>
     <nav class="navbar">
         <ul class="nav-links">
-            <li class="active"><a href="index.html"><img src="images/homepage.png" class="icono-navbar"></a></li>
+            <li class="nav-link"><a href="index.html"><img src="images/homepage.png" class="icono-navbar"></a></li>
             <li class="nav-link"><a href="formulario.html"><img src="images/formulario.png" class="icono-navbar"></a></li>      
-            <li class="nav-link"><a href="equipo.html"><img src="images/equipo.png" class="icono-navbar"></a></li>             
+            <li class="nav-link"><a href="equipo.html"><img src="images/equipo.png" class="icono-navbar"></a></li> 
+            <li class="nav-link-d"><img src="images/menu.png" class="icono-navbar">
+                <div class="dropdown-content">
+                    <a href="#">reto1</a>
+                    <a href="#">reto2</a>
+                    <a href="#">reto3</a>
+                  </div>
+            </li>            
         </ul>
     </nav>
     </div>
@@ -63,8 +70,8 @@
             <li class="li-index"><a href="#topologia">Topologia</a></li>
             <li class="li-index"><a href="#normativa">Normativa</a></li>
             <li class="li-index"><a href="#proposta">Proposta</a></li>
-            <li class="li-index"><a href="https://www.youtube.com/user/LabdooDACH">Posició</a></li>
-            <li class="li-index"><a href="https://www.youtube.com/user/LabdooDACH">Previsió</a></li>
+            <li class="li-index"><a href="#posicio">Posició</a></li>
+            <li class="li-index"><a href="#futuro-a">Previsió</a></li>
         </ol>
     </div>
 
@@ -121,6 +128,10 @@
     </div>
 
     <div class="div-proposta" id="proposta">
+        <h3 class="enunciat-reto-titulo">PLÀNOL</h3>
+        <div class="div-planol">
+        <img src="images/planol.png" alt="Plànol" class="planol-reto1">
+        </div>
         <h3 class="enunciat-reto-titulo">Proposta 1 (posició del servidor)</h3>
         <p class="enunciat-reto-p">Pressupost reforma sala de servidors(Mà d'obra inclosa a cada preu)</p>
         <table class="table-proposta">
@@ -163,6 +174,86 @@
                 <td>1.278,23€</td>
             </tr>
         </table>
+        <div class="div-planol-pr">
+            <img src="images/planol-pr1.png" alt="planol proposta1" class="I-planol-pr">
+        </div>
+        <h3 class="enunciat-reto-titulo">Proposta 2 (posició del servidor)</h3>
+        <p class="enunciat-reto-p">Pressupost reforma sala de servidors(Mà d'obra inclosa a cada preu)</p>
+        <table class="table-proposta">
+            <tr>
+                <th colspan="5">PRESUPUESTOS</th>
+            </tr>
+            <tr>
+                <td>Descripció</td>
+                <td>Unitat</td>
+                <td>Preu per unitat</td>
+                <td>Quantitat</td>
+                <td>Preu parcial</td>
+            </tr>
+            <tr>
+                <td>Renovació</td>
+                <td>m²</td>
+                <td>200,00€</td>
+                <td>5</td>
+                <td>1.000€</td>
+            </tr>
+            <tr>
+                <td>Ventana</td>
+                <td>cm²</td>
+                <td>0,13€</td>
+                <td>780</td>
+                <td>100€</td>
+            </tr>
+            <tr>
+                <td>Aire acondicionado</td>
+                <td></td>
+                <td>499€</td>
+                <td>1</td>
+                <td>499€</td>
+            </tr>
+            <tr>
+                <td>Instalación aire</td>
+                <td></td>
+                <td>320€</td>
+                <td>1</td>
+                <td>320€</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Preu total</td>
+                <td>1.919,00€</td>
+            </tr>
+        </table>
+        <div class="div-planol-pr">
+            <img src="images/planol-pr2.png" alt="planol proposta1" class="I-planol-pr">
+        </div>
+    </div>
+
+    <div class="div-posicio" id="posicio">
+        <h3 class="enunciat-reto-titulo">Posició del servidor</h3>
+        <p class="enunciat-reto-p">Hem escollit la proposta 1 ja que és més econòmica i de cara a l'organització seria menys treball. <br>
+            A la proposta 1, construirem dues parets a la línia groga de la imatge per aïllar una habitació separada per al servidor i instal·lar un aire condicionat a l'habitació per mantenir una temperatura adequada. Els cables estan disposats en forma d'arbre connectant des del nostre servidor a cada aula.
+        </p>
+        <div class="div-planol">
+        <img src="images/posicion-servidor.png" alt="Posició del servidor" class="planol-reto1">
+        </div>
+    </div>
+
+    <div class="div-futuro-a" id="futuro-a">
+        <h3 class="enunciat-reto-titulo">Previsió futures ampliacions</h3>
+        <p class="enunciat-reto-p">
+            Futures ampliacions possibles, de cara a la distribució vertical serà possible connectar un altre switch per fer una ampliació i de cara a la distribució horitzontal serà possible connectar nous dispositius a la xarxa en cas de ser necessari.
+        </p>
+        <div class="div-media-futuro">
+            <img src="images/Distribución-horizontal.png" alt="Distribución-horizontal">
+            <p class="enunciat-reto-p-a">Distribució horizontal</p>
+        </div>
+        <div class="div-media-futuro">
+            <img src="images/Distribución-vertical.png" alt="Distribución-horizontal">
+            <p class="enunciat-reto-p-a">Distribució vertical</p>
+        </div>
     </div>
 
 </section>
