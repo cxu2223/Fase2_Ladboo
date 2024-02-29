@@ -566,8 +566,59 @@ fieldset {
   transition: 0.1s ease;
 }
 
-input[type="radio"] {
-  accent-color: yellow;
+.radio-wrapper {
+  margin-bottom: 20px;
+}
+
+.radio-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transform: all 0.2s ease-in-out;
+}
+
+.radio-button:hover {
+  transform: translateY(-2px);
+}
+
+.radio-button input[type="radio"] {
+  display: none;
+}
+
+.radio-checkmark {
+  display: inline-block;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  border: 2px solid #ef9b00;
+  border-radius: 50%;
+}
+
+.radio-checkmark:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ef9b00;
+  transition: all 0.2s ease-in-out;
+}
+
+.radio-button input[type="radio"]:checked ~ .radio-checkmark:before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.radio-label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.subfieldset {
+  width: 25%;
 }
 
 .subfieldset:hover {
@@ -970,5 +1021,5 @@ input[type="radio"] {
 .embed-manual {
   width: 1300px;
   height: 800px;
-  margin: 20px 0;
+  margin: 3% 0;
 }
