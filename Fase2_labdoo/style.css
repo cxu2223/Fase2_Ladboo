@@ -702,13 +702,11 @@ input[type="radio"] {
 
 .enunciat-reto-70{
   width: 65%;
-  height: auto;
   margin-right: 4%;
 }
 
 .foto-30-div {
   width: 30%;
-  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -795,6 +793,12 @@ input[type="radio"] {
   border-radius: 10px;
 }
 
+.I-logo-ubuntu {
+  width: 250px;
+  height: 350px;
+  margin-left: 10%;
+}
+
 .I-topologia-mixto {
   width: 70%;
   border-radius: 10px;
@@ -808,6 +812,12 @@ input[type="radio"] {
 .I-planol-pr {
   width: 100%;
   border-radius: 10px;
+}
+
+.I-ubuntu {
+  border-radius: 10px;
+  width: 150px;
+  height: 200px;
 }
 
 
@@ -871,7 +881,7 @@ input[type="radio"] {
 .table-pressupost {
   width: 85%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin: 20px 0px;
 }
 
 .table-pressupost a {
@@ -906,6 +916,13 @@ input[type="radio"] {
 
 .table-proposta td:nth-child(1), .table-pressupost td:nth-child(1) {
   text-align: left;
+}
+
+.table-pressupost tr:nth-child(20) {
+  color: #422040;
+  background-color: #f5d08d;
+  font-weight: bold;
+  font-size: 20px;
 }
 
   /*       Index de reto     */
@@ -946,4 +963,12 @@ input[type="radio"] {
 .li-index a:hover {
   color: #422040;
   background-color: #F6AA1C;
+}
+
+
+/*          Manual        */
+.embed-manual {
+  width: 1300px;
+  height: 800px;
+  margin: 20px 0;
 }
