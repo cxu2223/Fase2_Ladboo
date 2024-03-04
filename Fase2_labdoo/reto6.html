@@ -6,6 +6,15 @@
     <link rel="icon" type="image/png" href="images/boladelmundo.png">
     <title>Projecte Labdoo</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+      function myFunction(id) {
+        let copyText = document.getElementById(id);
+        // Copy the text inside the text field
+        navigator.clipboard.writeText(copyText.textContent);
+        // Alert the copied text
+        alert("Comanda copiada: " + copyText.textContent);
+      }
+      </script>
   </head>
   <body>
     
@@ -80,8 +89,8 @@
         <ul class="ul-index">
             <li class="li-index"><a href="#neteja">Neteja</a></li>
             <li class="li-index"><a href="#maquinaria">Maquinària</a></li>
-            <li class="li-index"><a href="#proposta">Sistema Operatiu</a></li>
-            <li class="li-index"><a href="#posicio">Disc dur</a></li>
+            <li class="li-index"><a href="#sistemaoperatiu">Sistema Operatiu</a></li>
+            <li class="li-index"><a href="#discdur">Disc dur</a></li>
             <li class="li-index"><a href="#futuro-a">Còpies de seguretat</a></li>
         </ul>
     </div>
@@ -115,63 +124,108 @@
     <div class="enunciat-reto-wrap" id="maquinaria">
       <h3 class="enunciat-reto-titulo">MAQUINÀRIA</h3>
       <p class="enunciat-reto-p">Un cop netejat i connectat correctament tots els components hem comprovat si funciona, també hem fet una fitxa tècnica per a un major coneixement del nostre PC.</p>
-      <div class="enunciat-reto-centro">
-        <table class="table-pressupost table-95">
-          <tr>
-            <th colspan="5">FITXA TÈCNICA</th>
-          </tr>
-          <tr>
-            <td>Component</td>
-            <td>Marca i model</td>
-            <td>Foto</td>
-            <td>Justificació</td>
-          </tr>
-          <tr>
-            <td>Processador (disipador inclòs)</td>
-            <td>Intel Core i5-7400 3.00GHz</td>
-            <td><img src="images/procesador.png" class="image-fitxa"></td>
-            <td class="justificacio-tabla">Per defecte, ens venia un processador Intel Pentium però atès que no complia amb els requisits mínims dels nostres sistemes operatius vam decidir reemplaçar-lo per un Intel Core i5-7400.
-            </td>
-          </tr>
-          <tr>
-            <td>Placa base</td>
-            <td>GIGABYTE GA-H71M-S2H</td>
-            <td><img src="images/placa-base.png" class="image-fitxa"></td>
-            <td class="justificacio-tabla">Per defecte</td>
-          </tr>
-          <tr>
-            <td>Memòria RAM</td>
-            <td>Crucial 8GB DDR3 x 2 (16GB)</td>
-            <td><img src="images/memoriaram.png" class="image-fitxa"></td>
-            <td class="justificacio-tabla">Ens venien per defecte 4GB però per complir amb els requisits recomanats de 16GB hem afegit 12GB més.</td>
-          </tr>
-          <tr>
-            <td>Disc dur 1</td>
-            <td>Crucial MX500 SSD 250GB</td>
-            <td><img src="images/discoduro1.png" class="image-fitxa"></td>
-            <td class="justificacio-tabla">Per defecte</td>
-          </tr>
-          <tr>
-            <td>Disc dur 2</td>
-            <td>WD Green HDD 1TB</td>
-            <td><img src="images/discoduro2.png" class="image-fitxa"></td>
-            <td class="justificacio-tabla">No ens venia per defecte però el professor ens ha demanat utilitzar-lo per emmagatzemar les còpies de seguretat.</td>
-          </tr>
-          <tr>
-            <td>Font d'alimentació</td>
-            <td>Energy Power 500W</td>
-            <td><img src="images/fuente-alimentacion.png" class="image-fitxa"></td>
-            <td class="justificacio-tabla">Per defecte</td>
-          </tr>
-          <tr>
-            <td>Lector de tarjetes</td>
-            <td>Kloner</td>
-            <td><img src="images/lector-tarjetas.png" class="image-fitxa"></td>
-            <td class="justificacio-tabla">Per defecte</td>
-          </tr>
-        </table>
+      <div class="contenedor-padre-card">
+        <div class="card">
+          <img src="images/procesador.png">
+          <div class="card-content">
+            <p class="card-title">Processador</p>
+            <p class="card-subtitle">Intel Core i5-7400 3.00GHz</p>
+            <p class="card-description">Per defecte, ens venia un processador Intel Pentium però atès que no complia amb els 
+              requisits mínims dels nostres sistemes operatius vam decidir reemplaçar-lo per un Intel Core i5-7400.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/placa-base.png">
+          <div class="card-content">
+            <p class="card-title">Placa base</p>
+            <p class="card-subtitle">GIGABYTE GA-H71M-S2H</p>
+            <p class="card-description">Per defecte</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/memoriaram.png">
+          <div class="card-content">
+            <p class="card-title">Memòria RAM</p>
+            <p class="card-subtitle">Crucial 8GB DDR3 x 2 (16GB)</p>
+            <p class="card-description">Ens venien per defecte 4GB però per complir amb els requisits recomanats de 16GB hem afegit 12GB més.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/discoduro1.png">
+          <div class="card-content">
+            <p class="card-title">Disc dur 1</p>
+            <p class="card-subtitle">Crucial MX500 SSD 250GB</p>
+            <p class="card-description">Per defecte</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/discoduro2.png">
+          <div class="card-content">
+            <p class="card-title">Disc dur 2</p>
+            <p class="card-subtitle">WD Green HDD 1TB</p>
+            <p class="card-description">No ens venia per defecte però el professor ens ha demanat utilitzar-lo per emmagatzemar les còpies de seguretat.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/fuente-alimentacion.png">
+          <div class="card-content">
+            <p class="card-title">Font d'alimentació</p>
+            <p class="card-subtitle">Energy Power 500W</p>
+            <p class="card-description">Per defecte</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/lector-tarjetas.png">
+          <div class="card-content">
+            <p class="card-title">Lector de tarjetes</p>
+            <p class="card-subtitle">Kloner</p>
+            <p class="card-description">Per defecte</p>
+          </div>
+        </div>
       </div>
-    </div>
+      <div class="enunciat-reto-wrap" id="sistemaoperatiu">
+        <h3 class="enunciat-reto-titulo">SISTEMA OPERATIU</h3>
+        <p class="enunciat-reto-p">Windows Server 2016, llançat per Microsoft, té diverses avantatges que el fan atractiu per a diferents entorns empresarials. Aquí expliquem algunes de les avantatges clau:</p>
+        <ul>
+          <li class="enunciat-lista">Millores en seguretat</li>
+            <li class="enunciat-lista2">Windows Server 2016 inclou millores significatives en seguretat, com les funcions avançades de protecció contra amenaces i el sistema Credential Guard per protegir les credencials d'usuari.</li>
+          <li class="enunciat-lista">Administració centralitzada</li>
+            <li class="enunciat-lista2">Les eines de gestió, com el "Server Manager" i PowerShell, faciliten la administració centralitzada de múltiples servidors, simplificant les tasques administratives.</li>
+          <li class="enunciat-lista">Millora en el rendiment de la xarxa</li>
+            <li class="enunciat-lista2">Inclou funcionalitats com la segmentació de la xarxa i la millora del rendiment de la xarxa, la qual cosa és crucial per als entorns empresarials amb grans demandes de xarxa.</li>
+        </ul>
+        <p class="enunciat-reto-p">Per mantenir el nostre sistema operatiu Windows actualitzat ens fixarem a l'apartat Windows Update que no hi hagi actualitzacions pendentes. <br>Ubuntu Server 22.04 LTS, és un sistema operatiu en xarxa de codi obert. A continuació us explico alguns beneficis:</p>
+        <ul>
+          <li class="enunciat-lista">Estabilitat i Suport a Llarg Termini</li>
+            <li class="enunciat-lista2">Ofereix suport a llarg termini amb actualitzacions de seguretat, garantint estabilitat.</li>
+          <li class="enunciat-lista">Facilitat d'Ús</li>
+            <li class="enunciat-lista2">Interfície amigable i instal·lació senzilla, amb una àmplia comunitat i documentació.</li>
+          <li class="enunciat-lista">Gestió de Paquets</li>
+            <li class="enunciat-lista2">Utilitza APT per a una fàcil instal·lació i gestió del programari amb repositoris extensos.</li>
+          <li class="enunciat-lista">Desenvolupament de Programari</li>
+            <li class="enunciat-lista2">Suport per a diversos llenguatges de programació i eines de desenvolupament.</li>
+        </ul>
+        <p class="enunciat-reto-p">Per mantenir el nostre servidor actualitzat farem ús de les següents comandes:</p>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p1">sudo apt update</p>
+            <button class="terminal-button" onclick="myFunction('p1')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p2">sudo apt upgrade</p>
+            <button class="terminal-button" onclick="myFunction('p2')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+        <div class="enunciat-reto-70" id="copiesseguretat">
+          <h3 class="enunciat-reto-titulo">CÒPIES DE SEGURETAT</h3>
+          <p class="enunciat-reto-p"></p>
+        </div>
+        <div class="enunciat-reto-30" id="discdur">
+          <h3 class="enunciat-reto-titulo">DISC DUR I PARTICIONS</h3>
+          <p class="enunciat-reto-p">Disc dur 1: Tindrem dues particions, una per el sistema operatiu Windows Server 2016 i altre pel sistema operatiu Ubuntu Server 22.04 LTS.</p>
+        </div>
     </section>
 
         <!--           Footer           -->
