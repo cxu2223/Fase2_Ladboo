@@ -1093,6 +1093,33 @@ fieldset {
   background-color: #E06666;
 }
 
+.table-reto6 {
+  width: 100%;
+  border-collapse: collapse;
+
+}
+
+.table-reto6 td {
+  border-radius: 10px;
+}
+
+.table-header {
+  text-align: center;
+  font-size: 30px;
+}
+
+.td-particio1-1 {
+  width: 50%;
+  height: 80px;
+  border: 2px solid #241122;
+}
+
+.td-particio2-1 {
+  width: 50%;
+  height: 80px;
+  border: 2px solid #241122;
+}
+
   /*       Index de reto     */
 
 .div-index {
@@ -1315,6 +1342,12 @@ fieldset {
   border-radius: 10px;
   align-items: center;
   margin: 1%;
+  transition: 0.5s;
+}
+
+.terminal:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 10px 10px #422040;
 }
 
 .sudo {
@@ -1336,8 +1369,10 @@ fieldset {
   justify-content: center;
   align-items: center;
   font-family: Lucida Console, monospace;
-
+  border: #241122;
+  margin: 10px;
 }
+
 
 .terminal-icono {
   width: 20px;
