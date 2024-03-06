@@ -886,6 +886,13 @@ fieldset {
   justify-content: center;
 }
 
+.enunciat-reto6-discos {
+  padding-top: 3%;
+  margin: 35px 0 20px 0;
+  background: #8E7CC3;
+  border-radius: 10px;
+}
+
 .div-comparativa {
   display: flex;
   flex-wrap: wrap;
@@ -1154,7 +1161,7 @@ fieldset {
   -webkit-box-shadow: 2px 5px 36px 24px rgba(142, 124, 195,0.8);
   -moz-box-shadow: 2px 5px 36px 24px rgba(142, 124, 195,0.8);
   box-shadow: 2px 5px 24px 12px rgba(142, 124, 195,0.8);
-  letter-spacing: 1.5px;
+  letter-spacing: 1.3px;
   font-weight: bold;
 }
 
