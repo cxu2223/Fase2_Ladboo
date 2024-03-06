@@ -997,26 +997,29 @@ fieldset {
   line-height: 35px;
 }
 
+.enunciat-reto6-h3 {
+  color: #422040;
+  font-weight: bold;
+  width: 10%;
+}
+
 /*        Table        */
 
-.table-proposta {
+.table-proposta{
   width: 65%;
   border-collapse: collapse;
   margin-top: 20px;
   margin-right: 5%;
 }
 
-.table-pressupost {
+.table-pressupost, .table-estructura, .table-gpo {
   width: 85%;
   border-collapse: collapse;
-  margin: 20px 0px;
+  margin-top: 20px;
+  margin-right: 5%;
+  margin-bottom: 5%;
 }
 
-.table-estructura {
-  width: 85%;
-  border-collapse: collapse;
-  margin: 20px 0px;
-}
 
 .table-95 {
   width: 95%;
@@ -1038,6 +1041,13 @@ fieldset {
   border: 2px solid #ddd;
 }
 
+
+.table-gpo td {
+  padding: 10px;
+  border: 2px solid #f5a209;
+}
+
+
 .table-proposta th, .table-pressupost th, .table-estructura th {
   color: #422040;
   background-color: #f5d08d;
@@ -1049,7 +1059,7 @@ fieldset {
 }
 
 .table-estructura td:hover {
-  opacity: 0.9;
+  background-color: #ceb6ba;
 }
 
 .table-estructura td {
@@ -1065,6 +1075,14 @@ fieldset {
   font-weight: bold;
   color: #F6AA1C;
 }
+
+.tr-bold-centre {
+  font-weight: bold;
+  color: #F6AA1C;
+  text-align: center;
+  width: 30%;
+}
+
 
 .table-pressupost tr:nth-child(20) {
   color: #422040;
@@ -1090,36 +1108,56 @@ fieldset {
   background-color: #8E7CC3;
 }
 
+.td-purple-light-1 {
+  background-color: #ccc7dc;
+  transition: 0.5s;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.td-purple-light-2 {
+  background-color: #ccc7dc;
+  transition: 0.5s;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.td-purple-light-3 {
+  background-color: #ccc7dc;
+  transition: 0.5s;
+}
+
+
 .td-red {
   background-color: #E06666;
 }
 
-.table-reto6 {
-  width: 100%;
-  border-collapse: collapse;
-
-}
-
-.table-reto6 td {
+.table-particion, .table-particion2{
+  width: 80%;
+  margin-left: 5%;
+  margin-bottom: 3%;
+  text-align: center;
   border-radius: 10px;
 }
 
-.table-header {
-  text-align: center;
-  font-size: 30px;
+.table-particion td, .table-particion2 td{
+  padding: 20px;
 }
 
-.td-particio1-1 {
+.table-particion td {
   width: 50%;
-  height: 80px;
-  border: 2px solid #241122;
 }
 
-.td-particio2-1 {
-  width: 50%;
-  height: 80px;
-  border: 2px solid #241122;
+.table-particion2 td {
+  width: 25%;
 }
+
+.td-purple-light-1:hover, .td-purple-light-2:hover, .td-purple-light-3:hover{
+  -webkit-box-shadow: 2px 5px 36px 24px rgba(142, 124, 195,0.8);
+  -moz-box-shadow: 2px 5px 36px 24px rgba(142, 124, 195,0.8);
+  box-shadow: 2px 5px 24px 12px rgba(142, 124, 195,0.8);
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
 
   /*       Index de reto     */
 
@@ -1245,6 +1283,7 @@ fieldset {
   line-height: 1.4;
 }
 /*      Reto 4 ul     */
+
 .reto4-uo-ul{
   display: flex;
   width: 100%;
