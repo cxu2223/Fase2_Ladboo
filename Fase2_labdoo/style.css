@@ -905,7 +905,7 @@ fieldset {
 .I-topologia {
   width: 90%;
   border-radius: 10px;
-  margin-top: 15px;
+  margin: 15px 0 15px 0;
 }
 
 .I-logo-ubuntu {
@@ -913,6 +913,7 @@ fieldset {
   height: 350px;
   margin-left: 10%;
 }
+
 
 .I-topologia-mixto {
   width: 70%;
