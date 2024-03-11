@@ -715,7 +715,7 @@ fieldset {
   display: flex;
   flex-flow: row;
   width: 100%;
-  height: 700px;
+  height: 780px;
   justify-content: space-evenly;
   padding-bottom: 40px;
 }
@@ -724,6 +724,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   width: 22%;
+  height: 100%;
   text-align: center;
   border: 3px solid #fdd385;
   border-radius: 10px;
@@ -1021,11 +1022,31 @@ fieldset {
   border-radius: 10px;
 }
 
+.I-logo {
+  width: 70%;
+  margin-top: 10%;
 
+}
+
+.I-icono-html {
+  width: 40%;
+  margin-top: 10%;
+}
+
+.I-icono-css {
+  width: 50%;
+  margin-top: 20%;
+}
+
+.I-icono-js {
+  width: 50%;
+  margin-top: 20%;
+  border-radius: 10px;
+}
 
 /*      Reto textos       */
 .enunciat-reto-titulo {
-  font-size: 21px;
+  font-size: 30px;
   font-weight: bold;
   text-align: justify;
   color: #F6AA1C;
@@ -1033,6 +1054,7 @@ fieldset {
   padding-left: 5px;
   margin-top: 10px;
   padding-top: 10px;
+  text-transform: uppercase;
 }
 
 .enunciat-reto-p {
@@ -1055,6 +1077,14 @@ fieldset {
   margin: 0px;
   line-height: 35px;
   margin: 0px 10%;
+}
+
+.enunciat-reto-p-7 {
+  color: #ef9b00;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px;
+  line-height: 35px;
 }
 
 .link-reto {
@@ -1528,6 +1558,74 @@ fieldset {
   z-index: 2;
 }
 
-/*  -webkit-box-shadow: 2px 5px 36px 24px rgba(142, 124, 195,0.8);
-  -moz-box-shadow: 2px 5px 36px 24px rgba(142, 124, 195,0.8);
-  box-shadow: 2px 5px 24px 12px rgba(142, 124, 195,0.8);*/
+/*        PALETA DE COLORES         */
+
+.contenedor-paleta {
+  width: 100%;
+  padding: 3%;
+  background: #baadb9;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2% 0;
+  flex-flow: column;
+}
+
+.paleta {
+  display: flex;
+  height: 300px;
+  width: 95%;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.color {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  
+}
+
+.color span {
+  opacity: 0;
+  transition: opacity 0.1s linear;
+}
+
+.color:nth-child(1) {
+  background: #F8F8F1;
+  color: #0F0A0A;
+}
+
+.color:nth-child(2) {
+  background: #0F0A0A;
+}
+
+.color:nth-child(3) {
+  background: #C5979D;
+}
+
+.color:nth-child(4) {
+  background: #F6AA1C;
+}
+
+.color:nth-child(5) {
+  background: #422040;
+}
+
+.color:hover {
+  flex: 2;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.color:hover span {
+  opacity: 1;
+}

@@ -54,16 +54,18 @@
             <li class="enunciat-lista">Heu de decidir la llista de permisos que tindrà aquest usuari sobre la carpeta justificant el perquè.</li>
             <li class="enunciat-lista">Definir qualsevol altre política o directiva que creieu interessant per la gestió de l’escola.</li>
           </ul>
-      </div>
-      <div class="div-planol-pr">
-        <img src="images/grupo-usuario.png" alt="Image de Grups i usuaris" class="I-topologia">
-      </div>
       <p class="enunciat-reto-p">Llista de limitacions</p>
       <ul>
         <li class="enunciat-lista">Sempre ha d’haver un usuari administrador que tindrà el control total sobre tot.</li>
         <li class="enunciat-lista">Per l’usuari genèric, hem de veure que decidim que tingui com a limitacions. 
           (per exemple, que no pugui modificar l’escriptori, no poder instal·lar aplicacions i/o executar cmd, accès al registre…)</li>
       </ul>
+      </div>
+      <div class="div-planol-pr">
+        <img src="images/grupo-usuario.png" alt="Image de Grups i usuaris" class="I-topologia">
+      </div>
+
+
       <p class="enunciat-reto-p">En primer lloc el nostre encàrrec va ser aquest però nosaltres com a tècniques informàtiques, 
         gràcies als nostres coneixements vam decidir proposar una estructura molt més robusta i complexa. 
         Això degut a la manca de seguretat, control i centralització a l'encàrrec del nostre client.
@@ -74,12 +76,12 @@
           <h2>CONTINGUT</h2>
         </header>
         <ul class="ul-index">
-          <li class="li-index"><a href="#">Organitzativa</a></li>
-          <li class="li-index"><a href="#">Grup</a></li>
-          <li class="li-index"><a href="#">Usuari</a></li>
-          <li class="li-index"><a href="#">Carpetes</a></li>
-          <li class="li-index"><a href="#">Permisos</a></li>
-          <li class="li-index"><a href="#">GPO</a></li>
+          <li class="li-index"><a href="#organizativa">Organitzativa</a></li>
+          <li class="li-index"><a href="#grup">Grup</a></li>
+          <li class="li-index"><a href="#usuari">Usuari</a></li>
+          <li class="li-index"><a href="#carpetes">Carpetes</a></li>
+          <li class="li-index"><a href="#permisos">Permisos</a></li>
+          <li class="li-index"><a href="#gpo">GPO</a></li>
         </ul>
       </div>
 
@@ -95,7 +97,7 @@
           </div>
       </div>
 
-      <div class="enunciat-reto">
+      <div class="enunciat-reto" id="organizativa">
         <h3 class="enunciat-reto-titulo">Unidad organizativa</h3>
         <p class="enunciat-reto-p">Tenim 3 unitats organitzatives les quals són Direccio, Professors i Alumnes.</p>
         <ul class="reto4-uo-ul">
@@ -105,7 +107,7 @@
         </ul>
       </div>
 
-      <div class="enunciat-reto">
+      <div class="enunciat-reto" id="grup">
         <h3 class="enunciat-reto-titulo">Grups</h3>
         <p class="enunciat-reto-p">Tenim un total de 9 grups els quals són Direccio, Tutor, Profe, Alumne, AULA21, AULA22, AULA23, AULA24, AULA25.</p>
         <ul class="reto4-uo-ul">
@@ -121,7 +123,7 @@
         </ul>
       </div>
 
-      <div class="enunciat-reto">
+      <div class="enunciat-reto" id="usuari">
         <h3 class="enunciat-reto-titulo">Usuaris</h3>
         <p class="enunciat-reto-p">
           Tenim un total d'11 usuaris amb els seus respectius noms d'inici de sessió, que són Maria Fernandez (mfernandez), Miguel Diaz (mdiaz), Pau Smith (psmith), Hector Brown (hbrown), Jon Wilson (jwilson), Alba Davies ( adavies), Ivory Wright (iwright), Chenxiao Evans (cevans), Joel Garcia (jgarcia), Ruben Wood (rwood) i Alfonso Turner (aturner).</p>
@@ -204,7 +206,7 @@
         </div>
 
 
-      <div class="enunciat-reto">
+      <div class="enunciat-reto" id="carpetes">
         <h3 class="enunciat-reto-titulo">Carpetes</h3>
         <p class="enunciat-reto-p">Tenim un total de 10 carpetes amb una estructura, la carpeta principal Labdoo, al seu interior es trobaran les carpetes de Direccio, Tutors, Professors i Alumnes, ia l'interior d'Alumnes de trobaran les carpetes d'AULA21, AULA2, AULA23, AULA24 i AULA25.</p>
       </div>
@@ -242,7 +244,7 @@
         </table>
       </div>
 
-      <div class="enunciat-reto">
+      <div class="enunciat-reto" id="permisos">
         <h3 class="enunciat-reto-titulo">Permisos</h3>
       </div>
       <ul class="reto4-uo-ul">
@@ -395,7 +397,7 @@
         </div>
       </div>
 
-      <div class="enunciat-reto">
+      <div class="enunciat-reto" id="gpo">
         <h3 class="enunciat-reto-titulo">GPO</h3>
         <p class="enunciat-reto-p">Bloquearemos el acceso al símbolo del sistema y al panel de control a todas las unidades organizativas. Adicionalmente, para la unidad organizativa Alumnos bloquearemos la posibilidad de cambiar el fondo de pantalla.
         </p>
