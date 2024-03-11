@@ -153,6 +153,7 @@ footer p {
 }
 
 
+
 /*            titulo                */
 .titulo, .titulo-F, .titulo-E {
   background-repeat: no-repeat;
@@ -186,6 +187,8 @@ footer p {
   text-align: center;
   border-radius: 10px;
 }
+
+
 
 /*                    sustainable                         */
 .sustainable {
@@ -242,12 +245,18 @@ footer p {
 .gif-sus17:hover {
   content: url(gif/goal-17.gif);
 }
+
+
+
 /*                   Section enuciat                      */
 .s-enunciat-labdoo {
   padding: 35px 20px 0px 20px;
   display: flex;
   flex-flow: column;
 }
+
+
+
 /*    DIV enuciat-labdoo    */
 .headerlabdoo {
   background-color: #422040;
@@ -282,6 +291,8 @@ footer p {
   flex-direction: column;
 }
 
+
+
 /*                Section enuciat-labdoo textos                   */
 .enunciat-labdoo h2 {
   font-weight: bolder;
@@ -305,6 +316,9 @@ footer p {
   height: 80%;
 }
 
+
+
+
 /*                Section enuciat-labdoo imagen                     */
 .imatgelabdoo {
   width: 30%;
@@ -314,12 +328,20 @@ footer p {
   width: 100%;
   height: 100%;
 }
+
+
+
+
 /*                  Section enuciat-fase                               */
 .s-enunciat-fase {
   display: flex;
   flex-wrap: wrap;
   padding: 50px 20px 20px 20px;
 }
+
+
+
+
 
 /*                    DIV enuciat-fase                             */
 .headerfase {
@@ -347,6 +369,11 @@ footer p {
   flex-flow: column;
   border-bottom: 5px solid #422040;
 }
+
+
+
+
+
 /*                 Section enuciat-fase textos              */
 .enunciat-fase h2 {
   font-weight: bolder;
@@ -364,6 +391,10 @@ footer p {
   max-width: 99%;
   font-size: 21px;
 }
+
+
+
+
 
 /*                          Nav retos                      */
 .nav-retos {
@@ -436,6 +467,10 @@ footer p {
 }
 
 
+
+
+
+
 /*                      Lista de enunciat                    */
 
 .enunciat-lista {
@@ -461,6 +496,8 @@ footer p {
   color: #f5a209;
   margin-left: 10%;
 }
+
+
 
 
 
@@ -662,6 +699,7 @@ fieldset {
 
 
 
+
 /*                equipo                             */
 .s-equipo {
   margin: 0;
@@ -697,6 +735,8 @@ fieldset {
   transition-duration: 0.5s;
 }
 
+
+
 /*  Equipo images */
 
 .img-miembro1, .img-miembro2, .img-miembro3, .img-miembro4 {
@@ -725,6 +765,8 @@ fieldset {
   color: #422040;
 }
 
+
+
 /*Equipo textos*/
 
 .descripcion-miembro {
@@ -744,8 +786,10 @@ fieldset {
 }
 
 
-/*Reto1*/
 
+
+
+/*Reto1*/
 /*     Section    */
 .section-retos-enunciat {
   padding: 20px 20px 0px 20px;
@@ -753,6 +797,7 @@ fieldset {
   flex-wrap: wrap;
   display: flex;
 }
+
 
 /*DIV RETO*/
 
@@ -922,6 +967,8 @@ fieldset {
   align-items: center;
 }
 
+
+
 /*  Reto Images   */
 
 .I-topologia {
@@ -971,6 +1018,9 @@ fieldset {
 .image-fitxa {
   border-radius: 10px;
 }
+
+
+
 /*      Reto textos       */
 .enunciat-reto-titulo {
   font-size: 21px;
@@ -1025,6 +1075,7 @@ fieldset {
   width: 10%;
 }
 
+
 /*        Table        */
 
 .table-proposta{
@@ -1041,7 +1092,6 @@ fieldset {
   margin-right: 5%;
   margin-bottom: 5%;
 }
-
 
 .table-95 {
   width: 95%;
@@ -1063,12 +1113,10 @@ fieldset {
   border: 2px solid #ddd;
 }
 
-
 .table-gpo td {
   padding: 10px;
   border: 2px solid #f5a209;
 }
-
 
 .table-proposta th, .table-pressupost th, .table-estructura th {
   color: #422040;
@@ -1105,7 +1153,6 @@ fieldset {
   width: 30%;
 }
 
-
 .table-pressupost tr:nth-child(20) {
   color: #422040;
   background-color: #f5d08d;
@@ -1130,10 +1177,10 @@ fieldset {
   background-color: #8E7CC3;
 }
 
-
 .td-red {
   background-color: #E06666;
 }
+
 
 
   /*       Index de reto     */
@@ -1175,6 +1222,7 @@ fieldset {
   color: #422040;
   background-color: #F6AA1C;
 }
+
 
 
 /*          Manual        */
@@ -1399,20 +1447,23 @@ fieldset {
 .div-particions {
   width: 80%;
   display: flex;
-  align-items: center;
-  flex-direction: row;
-  margin: 2% 0;
+  flex-wrap: wrap;
+  margin: 2%;
   text-align: center;
 }
 
 .div-particion-50 {
   width: 50%;
-  padding: 0.5%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .div-particion-25 {
   width: 25%;
-  padding: 0.5%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .div-purple-light-1 {
@@ -1442,10 +1493,24 @@ fieldset {
   border-right: 1px solid #998cc1;
 }
 
-.div-purple-light-1:hover, .div-purple-light-2:hover, .div-purple-light-3:hover, .div-purple-light-4:hover{
+.div-particion-all:hover {
   -webkit-box-shadow: 2px 5px 36px 24px rgba(142, 124, 195,0.8);
   -moz-box-shadow: 2px 5px 36px 24px rgba(142, 124, 195,0.8);
   box-shadow: 2px 5px 24px 12px rgba(142, 124, 195,0.8);
   letter-spacing: 1.3px;
   font-weight: bold;
 }
+
+.div-particion-all,.div-oculto-particion {
+  width: 100%;
+  padding: 0.5%;
+}
+
+.div-particion-50:hover .div-oculto-particion, .div-particion-25:hover .div-oculto-particion {
+  opacity: 1;
+}
+
+.div-oculto-particion {
+  opacity: 0;
+}
+
