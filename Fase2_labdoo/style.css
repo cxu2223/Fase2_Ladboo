@@ -860,6 +860,13 @@ fieldset {
   margin-right: 4%;
 }
 
+.enunciat-reto-50 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .foto-30-div {
   width: 30%;
   display: flex;
@@ -1053,18 +1060,28 @@ fieldset {
 
 .I-icono-js {
   width: 80%;
-  height: 50%;
+  height: fit-content;
   border-radius: 10px;
 }
 
 .I-codigo {
   width: 80%;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .I-icono-github {
   width: 70%;
 }
+
+.foto-reto7 {
+  width: 100%;
+  height: 40%;
+  border-radius: 10px;
+  background-color: red;
+}
+
+
 
 /*      Reto textos       */
 .enunciat-reto-titulo {
@@ -1670,13 +1687,36 @@ fieldset {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background: #f3e2e3;
   display: block; /* This hides the summary's ::marker pseudo-element */
-
+  cursor: pointer;
 }
 .accordeon-summary::-webkit-details-marker {
   display: none; /* This also hides the ::marker pseudo-element, but in Safari */
  }
 
 .accordeon-summary:hover {
-  letter-spacing: 6px;
+  letter-spacing: 2px;
+  opacity: 0.8;
 }
 
+/* TARJETAS RETO 7 */
+
+.tarjeta-reto7 {
+  width: 45%;
+  border: 2px solid #f2ce00;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.thumbnail-reto7 {
+  height: 100px;
+  background-color: red;
+  border-radius: 8px;
+
+}
+
+.tarjeta-reto7:hover {
+  -webkit-box-shadow: 2px 5px 36px 24px rgba(253,211,133,0.8);
+  -moz-box-shadow: 2px 5px 36px 24px rgba(253,211,133,0.8);
+  box-shadow: 2px 5px 36px 24px rgba(253,211,133,0.8);
+  transition-duration: 0.5s;
+}
