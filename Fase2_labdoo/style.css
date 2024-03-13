@@ -868,6 +868,12 @@ fieldset {
   justify-content: center;
 }
 
+.foto-30-div-reto7 {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
 .foto-40-div {
   width: 40%;
   display: flex;
@@ -1048,12 +1054,17 @@ fieldset {
 
 .I-icono-js {
   width: 80%;
+  height: 50%;
   border-radius: 10px;
 }
 
 .I-codigo {
-  width: 100%;
+  width: 80%;
   border-radius: 10px;
+}
+
+.I-icono-github {
+  width: 70%;
 }
 
 /*      Reto textos       */
@@ -1618,7 +1629,6 @@ fieldset {
 .color:nth-child(1) {
   background: #F8F8F1;
   color: #0F0A0A;
-  border-top: 1px solid #F8F8F1;
 }
 
 .color:nth-child(2) {
@@ -1657,7 +1667,7 @@ fieldset {
   border-radius: 5px;
   font-size: 20px;
   font-weight: bold;
-  transition: 0.5s;
+  transition: 0.1s;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background: #f3e2e3;
 }
