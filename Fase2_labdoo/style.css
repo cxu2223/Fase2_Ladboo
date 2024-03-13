@@ -50,15 +50,14 @@ footer p {
   list-style: none;
   display: flex;
   flex-flow: wrap;
+  gap: 32px;
 }
 
-.footer-lista {
-  padding: 0 20px 0 20px;
-}
+
 
 .icono-footer {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
 }
 
 
@@ -1661,7 +1660,7 @@ fieldset {
 /*                  ACCORDEON         */
 
 .accordeon-summary {
-  padding: 10px;
+  padding: 15px;
   margin: 2%;
   border-bottom: 2px solid #422040;
   border-radius: 5px;
@@ -1670,8 +1669,14 @@ fieldset {
   transition: 0.1s;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background: #f3e2e3;
+  display: block; /* This hides the summary's ::marker pseudo-element */
+
 }
+.accordeon-summary::-webkit-details-marker {
+  display: none; /* This also hides the ::marker pseudo-element, but in Safari */
+ }
 
 .accordeon-summary:hover {
   letter-spacing: 6px;
 }
+
