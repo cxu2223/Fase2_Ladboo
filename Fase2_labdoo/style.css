@@ -51,6 +51,7 @@ footer p {
   display: flex;
   flex-flow: wrap;
   gap: 32px;
+  margin-right: 2%;
 }
 
 
@@ -158,7 +159,7 @@ footer p {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
-  height: 700px;
+  height: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -864,7 +865,8 @@ fieldset {
   width: 50%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  padding: 0 20%;
 }
 
 .foto-30-div {
@@ -1047,6 +1049,12 @@ fieldset {
   width: 90%;
   border-radius: 10px;
   margin-top: 20%;
+}
+
+.I-logo-enunciat-reto7 {
+  width: 90%;
+  border-radius: 10px;
+  margin: 10% 0;
 }
 
 .image-fitxa {
