@@ -1501,11 +1501,11 @@ fieldset {
 }
 
 .div-blue:hover, .div-fucsia:hover, .div-purple:hover, .div-red:hover {
-  -webkit-box-shadow: 2px 5px 36px 24px rgba(235, 227, 212, 0.8);
-  -moz-box-shadow: 2px 5px 36px 24px rgba(235, 227, 212, 0.8);
-  box-shadow: 2px 5px 36px 24px rgba(235, 227, 212, 0.8);
+  -webkit-box-shadow: 2px -2px 24px 8px #668BE096;
+  -moz-box-shadow: 2px -2px 24px 8px #668BE096;
+  box-shadow: 2px -2px 24px 8px #668BE096;
   color: #F8F8F1;
-  border: 2px solid #ceb6ba;
+  border: 2px solid #668BE096;
 }
 
 
