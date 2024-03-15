@@ -9,10 +9,14 @@ body {
     background-color:#F8F8F1;
 }
 
+.b-verde {
+  color: #5CAD7A;
+}
+
 
 /*              Header y footer                  */
 .header, #header {
-    background-color: #ceb6ba;
+    background-color: #a3b8eb;
     position: sticky;
     width: 100%;
     top: 0%;
@@ -20,17 +24,16 @@ body {
 }
 
 footer {
-    background-color: #ceb6ba;
+    background-color: #a3b8eb;
     padding: 10px;
     text-align: left;
-    color: #0F0A0A;
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
 }
 
 footer p {
-  color: #0F0A0A;
+  color: #2E1C30;
   font-size: 15px;
   padding-left: 10px;
   font-weight: 400;
@@ -69,7 +72,7 @@ footer p {
 
 .navbar, #navbar {
   display: flex;
-  background: #ceb6ba;
+  background: #a3b8eb;
   width: 100%;
   height: auto;
   justify-content: right;
@@ -86,14 +89,12 @@ footer p {
   cursor: pointer;
   padding: 10px 30px 5px 30px;
   margin: 0px;
-  color: #DBE2EF;
   border-radius: 10px 10px 0px 0px;
   transition: 0.3s;
 }
 
 .nav-link:hover, .nav-link-d:hover {
-  background-color: #F6AA1C;
-  color: #fff;
+  background-color: #5a7ed1;
 }
 
 .icono-navbar {
@@ -105,7 +106,7 @@ footer p {
   list-style: none;
   cursor: pointer;
   padding: 10px 30px 5px 30px;
-  background-color: #fdd385;
+  background-color: #839ede;
   border-radius: 10px 10px 0px 0px;
 }
 
@@ -116,18 +117,18 @@ footer p {
 .dropdown-content {
   margin-top: 10px;
   display: none;
-  background-color: #F6AA1C;
+  background-color: #a3b8eb;
   z-index: 1;
   position: absolute;
   right: 0;
   width: 30%;
-  border-radius: 10px 0px 10px 10px;
+  border-radius: 0px 0px 10px 10px;
   height: auto;
 }
 
 .active-reto {
-  background-color: #fdd385;
-  color: #212120;
+  background-color: #839ede;
+  color: #2E1C30;
   padding: 10px 16px;
   text-decoration: none;
   display: block;
@@ -138,7 +139,7 @@ footer p {
 }
 
 .no-active-reto {
-  color: #212120;
+  color: #2E1C30;
   padding: 10px 16px;
   text-decoration: none;
   display: block;
@@ -149,7 +150,7 @@ footer p {
 }
 
 .no-active-reto:hover {
-  background-color: #f2e9e9;
+  background-color: #5a7ed1;
 }
 
 
@@ -166,7 +167,7 @@ footer p {
 }
 
 .titulo {
-  background-image: url(images/banner-index.png);
+  background-image: url(images/banner-index.jpg);
 }
 
 .titulo-F {
@@ -180,13 +181,14 @@ footer p {
 .titulo-textos {
   font-family: "Oswald";
   font-size: 30px;
-  color: #422040;
+  color: #5CAD7A;
   font-weight: bolder;
-  background-color: #F6AA1C;
+  backdrop-filter: blur(90px);
   width: 40%;
   text-align: center;
   border-radius: 10px;
 }
+
 
 
 
@@ -203,7 +205,7 @@ footer p {
   font-weight: bolder;
   font-size:  38px;
   font-weight: bold;
-  color: #422040;
+  color: #346551;
   text-transform: uppercase;
   font-family: "Oswald";
   padding: 0px 20px 20px 20px;
@@ -217,9 +219,9 @@ footer p {
   border-radius: 10px;
 }
 .gif-sus4:hover, .gif-sus5:hover, .gif-sus9:hover, .gif-sus10:hover, .gif-sus11:hover, .gif-sus12:hover, .gif-sus15:hover, .gif-sus17:hover {
-  -webkit-box-shadow: 2px -2px 24px 8px rgba(246,170,28,0.59);
-  -moz-box-shadow: 2px -2px 24px 8px rgba(246,170,28,0.59);
-  box-shadow: 2px -2px 24px 8px rgba(246,170,28,0.59);
+  -webkit-box-shadow: 2px -2px 24px 8px #668BE096;
+  -moz-box-shadow: 2px -2px 24px 8px #668BE096;
+  box-shadow: 2px -2px 24px 8px #668BE096;
 }
 .gif-sus4:hover {
   content: url(gif/goal-4.gif);
@@ -259,8 +261,8 @@ footer p {
 
 /*    DIV enuciat-labdoo    */
 .headerlabdoo {
-  background-color: #422040;
-  color: #F6AA1C;
+  background-color: #346551;
+  color: #F8F8F1;
   border-radius: 20px;
   margin-bottom: 10px;
   font-weight: bolder;
@@ -278,7 +280,7 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     height: 20%;
-    color: #0F0A0A;
+    color: #2E1C30;
     border-radius: 20px;
     padding: 15px;
     margin-bottom: 10px;
@@ -300,7 +302,7 @@ footer p {
   font-weight: bold;
   width: 100%;
   height: 20%;
-  color: #422040;
+  color: #346551;
   font-family: "Oswald";
 }
 
@@ -345,8 +347,8 @@ footer p {
 
 /*                    DIV enuciat-fase                             */
 .headerfase {
-  background-color: #422040;
-  color: #F6AA1C;
+  background-color: #346551;
+  color: #F8F8F1;
   border-radius: 20px;
   margin-bottom: 10px;
   font-weight: bolder;
@@ -365,10 +367,10 @@ footer p {
   display: flex;
   width: 70%;
   height: 20%;
-  color: #0F0A0A;
+  color: #2E1C30;
   padding: 2%;
   flex-flow: column;
-  border-bottom: 5px solid #422040;
+  border-bottom: 5px solid #346551;
 }
 
 
@@ -380,7 +382,7 @@ footer p {
   font-weight: bolder;
   font-size:  38px;
   font-weight: bold;
-  color: #422040;
+  color: #346551;
   text-transform: uppercase;
   font-family: "Oswald";
 }
@@ -423,7 +425,7 @@ footer p {
 .li-reto {
   border-radius: 20px;
   width: 85%;
-  border: 3px solid #422040;
+  border: 3px solid rgb(90, 126, 209);
   padding: 5%;
   transition: 0.5s;
   position: relative;
@@ -431,7 +433,7 @@ footer p {
 
 .li-reto a {
   display: flex;
-  color: #422040;
+  color: #5a7ed1;
   text-decoration: none;
   font-size: auto;
   font-weight: bolder;
@@ -443,8 +445,7 @@ footer p {
 }
 
 .li-reto:hover {
-  border: 3px solid #422040;
-  background-color: #C5979D;
+  background-color: #c1cfee;
   padding-right: 35%;
 }
 
@@ -478,7 +479,7 @@ footer p {
   font-size: 21px;
   font-weight: bold;
   text-align: justify;
-  color: #F6AA1C;
+  color: #5CAD7A;
 }
 
 .enunciat-lista2 {
@@ -494,7 +495,7 @@ footer p {
   font-weight: normal;
   text-align: justify;
   padding-bottom: 15px;
-  color: #f5a209;
+  color: #5CAD7A;
   margin-left: 10%;
 }
 
@@ -506,6 +507,7 @@ footer p {
 .section-form {
   padding-top: 2%;
   padding-bottom: 2%;
+  color: #346551;
 }
 
 .form {
@@ -513,13 +515,13 @@ footer p {
   margin: 0 auto;
   padding: 10px;
   border-radius: 10px;
-  background: #f3e2e3;
+  background: #ebf0fd;
 }
 
 .fieldset {
   border-radius: 10px;
   padding: 20px;
-  border: 2px solid #F6AA1C;
+  border: 2px solid #346551;
 }
 
 .div-formulario{
@@ -530,7 +532,6 @@ footer p {
 }
 
 legend {
-  color: #422040;
   font-weight: bold;
   font-size: 20px;
 }
@@ -554,7 +555,7 @@ legend {
   padding: 0 30px;
   line-height: 50px;
   border-radius: 10px;
-  border: 2px solid #422040;
+  border: 2px solid #346551;
   background-color: transparent;
   transition: 0.1s ease;
   z-index: 1;
@@ -563,7 +564,6 @@ legend {
 .label-line {
   position: absolute;
   font-size: 18px;
-  color: #422040;
   padding: 0 25px;
   margin: 0 20px;
   transition: 0.2s ease;
@@ -573,20 +573,18 @@ legend {
 .input-text:valid,
 .input-radio:focus,
 .input-radio:valid {
-  color: #ef9b00;
-  border: 4px solid #ef9b00;
+  border: 4px solid #346551;
 }
 
 .input-text:focus + .label-line,
 .input-text:valid + .label-line,
 .input-radio:focus + .label-line,
 .input-radio:valid + .label-line {
-  color: #ef9b00;
   height: 30px;
   line-height: 30px;
   transform: translate(-15px, -16px) scale(0.88);
   z-index: 1;
-  background-color: #f3e2e3
+  background-color: #ebf0fd
 }
  
 fieldset {
@@ -600,7 +598,7 @@ fieldset {
   padding: 0 30px;
   line-height: 50px;
   border-radius: 10px;
-  border: 2px solid #422040;
+  border: 2px solid #346551;
   background-color: transparent;
   transition: 0.1s ease;
 }
@@ -630,7 +628,7 @@ fieldset {
   width: 16px;
   height: 16px;
   margin-right: 10px;
-  border: 2px solid #ef9b00;
+  border: 2px solid #346551;
   border-radius: 50%;
 }
 
@@ -643,7 +641,7 @@ fieldset {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #ef9b00;
+  background-color: #346551;
   transition: all 0.2s ease-in-out;
 }
 
@@ -661,7 +659,7 @@ fieldset {
 }
 
 .subfieldset:hover {
-  border: 3px solid #ef9b00;
+  border: 3px solid #346551;
 }
 
 .sublegend {
@@ -678,23 +676,23 @@ fieldset {
   padding: 10px 20px;
   border: none;
   font-size: 17px;
-  color: rgb(239,155,0);
+  color: #F8F8F1;
   border-radius: 7px;
   letter-spacing: 4px;
   font-weight: 700;
   text-transform: uppercase;
   transition: 0.5s;
   transition-property: box-shadow;
-  background: rgb(66,32,64);
-  box-shadow: 0 0 25px rgb(66,32,64);
+  background: #668BE0;
+  box-shadow: 0 0 25px #668BE0;
   margin: 0 20px;
 }
 
 .buton-enviar:hover {
-  box-shadow: 0 0 5px rgb(66,32,64),
-  0 0 25px rgb(66,32,64),
-  0 0 50px rgb(66,32,64),
-  0 0 100px rgb(66,32,64);
+  box-shadow: 0 0 5px #668BE0,
+  0 0 25px #668BE0,
+  0 0 50px #668BE0,
+  0 0 100px #668BE0;
   cursor: pointer;
 }
 
@@ -718,6 +716,7 @@ fieldset {
   height: 780px;
   justify-content: space-evenly;
   padding-bottom: 40px;
+  margin-top: 20px;
 }
 
 .miembro1 {
@@ -726,14 +725,14 @@ fieldset {
   width: 22%;
   height: 100%;
   text-align: center;
-  border: 3px solid #fdd385;
+  border: 3px solid #346551;
   border-radius: 10px;
 }
 
 .miembro1:hover {
-  -webkit-box-shadow: 2px 5px 36px 24px rgba(253,211,133,0.8);
-  -moz-box-shadow: 2px 5px 36px 24px rgba(253,211,133,0.8);
-  box-shadow: 2px 5px 36px 24px rgba(253,211,133,0.8);
+  -webkit-box-shadow: 2px 5px 20px 12px #5CAD7Acc;
+  -moz-box-shadow: 2px 5px 20px 12px #5CAD7Acc;
+  box-shadow: 2px 5px 20px 12px #5CAD7Acc;
   transition-duration: 0.5s;
 }
 
@@ -764,7 +763,7 @@ fieldset {
 }
 
 .miembro1 h3 {
-  color: #422040;
+  color: #346551;
 }
 
 
@@ -775,7 +774,7 @@ fieldset {
   padding: 0px 5% 0px 5%;
   text-align: justify;
   font-size: 14px;
-  color: #422040;
+  color: #2E1C30;
   line-height: 21px;
 }
 
@@ -783,7 +782,7 @@ fieldset {
   text-align: justify;
   line-height: 30px;
   font-size: 20px;
-  color: #0F0A0A;
+  color: #2E1C30;
   padding: 0px 30px 25px 30px;
 }
 
@@ -851,6 +850,10 @@ fieldset {
   margin-right: 4%;
 }
 
+.enunciat-reto9-70{
+  width: 70%;
+}
+
 .enunciat-reto-70-flex{
   width: 65%;
   display: flex;
@@ -865,13 +868,10 @@ fieldset {
   width: 60%;
   display: flex;
   align-items: center;
-<<<<<<< Updated upstream
   justify-content: center;
   padding: 0 20%;
-=======
   justify-content: space-evenly;
   padding: 3%;
->>>>>>> Stashed changes
 }
 
 .foto-30-div {
@@ -984,7 +984,6 @@ fieldset {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background: #998cc1;
   border-radius: 10px;
 }
 
@@ -1012,6 +1011,12 @@ fieldset {
   margin: 15px 0 15px 0;
 }
 
+.I-foto-reto9 {
+  width: 90%;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
 .I-logo-miro {
   width: 90%;
   border-radius: 10px;
@@ -1036,6 +1041,11 @@ fieldset {
 }
 
 .I-planol-pr {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.I-logo-windows-reto3 {
   width: 100%;
   border-radius: 10px;
 }
@@ -1109,7 +1119,7 @@ fieldset {
   font-size: 30px;
   font-weight: bold;
   text-align: justify;
-  color: #F6AA1C;
+  color: #346551;
   width: 100%;
   padding-left: 5px;
   margin-top: 10px;
@@ -1126,12 +1136,13 @@ fieldset {
   line-height: 35px;
 }
 
-.enunciat-reto-p a {
-  color: #ef9b00;
+.enunciat-reto-p a, .enunciat-reto-p-a {
+  color: #346551;
+  font-weight: bold;
 }
 
 .enunciat-reto-p-b {
-  color: #ef9b00;
+  color: #346551;
   font-size: 20px;
   font-weight: bold;
   margin: 0px;
@@ -1140,7 +1151,7 @@ fieldset {
 }
 
 .enunciat-reto-p-7 {
-  color: #ef9b00;
+  color: #346551;
   font-size: 20px;
   font-weight: bold;
   margin: 0px;
@@ -1162,7 +1173,7 @@ fieldset {
 }
 
 .enunciat-reto6-h3 {
-  color: #f2ce00;
+  color: #346551;
   font-weight: bold;
   width: 10%;
 }
@@ -1190,7 +1201,7 @@ fieldset {
 }
 
 .table-pressupost a {
-  color: #f5a209;
+  color: #346551;
 }
 
 .table-proposta th, .table-proposta td, .table-pressupost th, .table-pressupost td {
@@ -1207,12 +1218,12 @@ fieldset {
 
 .table-gpo td {
   padding: 10px;
-  border: 2px solid #f5a209;
+  border: 2px solid #346551;
 }
 
 .table-proposta th, .table-pressupost th, .table-estructura th {
-  color: #422040;
-  background-color: #f5d08d;
+  color: #f8f8f8;
+  background-color: #346551;
   font-size: 20px;
 }
 
@@ -1235,19 +1246,19 @@ fieldset {
 
 .tr-bold {
   font-weight: bold;
-  color: #F6AA1C;
+  color: #346551;
 }
 
 .tr-bold-centre {
   font-weight: bold;
-  color: #F6AA1C;
+  color: #346551;
   text-align: center;
   width: 30%;
 }
 
 .table-pressupost tr:nth-child(20) {
-  color: #422040;
-  background-color: #f5d08d;
+  color: #f8f8f8;
+  background-color: #346551;
   font-weight: bold;
   font-size: 20px;
 }
@@ -1298,22 +1309,31 @@ fieldset {
   text-align: center;
 }
 
-.li-index a {
-  border: 2px solid #422040;
+.li-index2 {
+  width: 20%;
+  height: 50%;
+  padding: 1%;
+  margin: 1%;
+  text-align: center;
+}
+
+.li-index a, .li-index2 a {
+  border: 2px solid #346551;
   border-radius: 20px;
   padding: 5% 10% 5% 10%;
   text-decoration: none;
-  color: #F6AA1C;
+  color: #5CAD7A;
   transition: 0.5s;
   font-size: 25px;
   font-weight: bold;
   white-space: nowrap;
 }
 
-.li-index a:hover {
-  color: #422040;
-  background-color: #F6AA1C;
+.li-index a:hover, .li-index2 a:hover {
+  color: #F8F8F1;
+  background-color: #346551;
 }
+
 
 
 
@@ -1347,14 +1367,13 @@ fieldset {
 
 .card img {
   width: 95%;
-  fill: #333;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   border-radius: 10px;
 }
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(253,211,133,0.8);
+  box-shadow: 0 8px 16px rgba(52, 101, 81,0.8);
 }
 
 .card-content {
@@ -1365,7 +1384,7 @@ fieldset {
   height: 100%;
   padding: 20px;
   box-sizing: border-box;
-  background-color: #f5d08d;
+  background-color: #346551;
   transform: rotateX(-90deg);
   transform-origin: bottom;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -1378,14 +1397,14 @@ fieldset {
 .card-title {
   margin: 0;
   font-size: 24px;
-  color: #422040;
+  color: #f8f8f8;
   font-weight: 700;
 }
 
 .card-subtitle {
   margin: 0;
   font-size: 18px;
-  color: #422040;
+  color: #f8f8f8;
   font-weight: 700;
 }
 
@@ -1396,7 +1415,7 @@ fieldset {
 .card-description {
   margin: 10px 0 0;
   font-size: 14px;
-  color: #422040;
+  color: #f8f8f8;
   line-height: 1.4;
 }
 /*      Reto 4 ul     */
@@ -1418,8 +1437,8 @@ fieldset {
   padding: 15px;
   background-color: #F8F8F1;
   border-radius: 10px;
-  color: #422040;
-  border: 2px solid #422040;
+  color: #5CAD7A;
+  border: 2px solid #346551;
   font-size: 20px;
   font-weight: bold;
   transition: 0.3s;
@@ -1427,8 +1446,8 @@ fieldset {
 }
 
 .reto4-ou-div:hover {
-  background-color: #ef9b00;
-  border: 2px solid #422040;
+  background-color: #346551;
+  border: 2px solid #346551;
   color: #F8F8F1;
 }
 
@@ -1495,7 +1514,7 @@ fieldset {
   display: flex;
   width: 95%;
   height: 75px;
-  background: #241122;
+  background: #346551;
   border-radius: 10px;
   align-items: center;
   margin: 1%;
@@ -1504,11 +1523,11 @@ fieldset {
 
 .terminal:hover {
   transform: translateY(-2px);
-  box-shadow: 0px 10px 10px #422040;
+  box-shadow: 0px 10px 10px #346551;
 }
 
 .sudo {
-  color: #ef9b00;
+  color: #f8f8f8;
   padding: 0 0 0 3%;
   font-family: Lucida Console, monospace;
   font-size: 20px;
@@ -1520,7 +1539,7 @@ fieldset {
   height: 40px;
   width: 95px;
   border-radius: 10px;
-  background: #ef9b00;
+  background: #a3b8eb;
   cursor: pointer;
   font-size: 15px;
   justify-content: center;
@@ -1561,30 +1580,30 @@ fieldset {
 }
 
 .div-purple-light-1 {
-  background-color: #ccc7dc;
+  background-color: #a3b8eb;
   transition: 0.5s;
   border-radius: 10px 0px 0px 10px;
-  border: 2px solid #998cc1;
+  border: 2px solid #668BE0;
 }
 
 .div-purple-light-2 {
-  background-color: #ccc7dc;
+  background-color: #a3b8eb;
   transition: 0.5s;
   border-radius: 0px 10px 10px 0px;
-  border: 2px solid #998cc1;
+  border: 2px solid #668BE0;
 }
 
 .div-purple-light-3 {
-  background-color: #ccc7dc;
+  background-color: #a3b8eb;
   transition: 0.5s;
-  border: 2px solid #998cc1;
+  border: 2px solid #668BE0;
 }
 
 .div-purple-light-5 {
-  background-color: #ccc7dc;
+  background-color: #a3b8eb;
   transition: 0.5s;
   border-radius: 10px;
-  border: 2px solid #998cc1;
+  border: 2px solid #668BE0;
 }
 
 .div-particion-all,.div-oculto-particion {
@@ -1593,7 +1612,7 @@ fieldset {
 }
 
 .div-particion-all:hover {
-  border: 2px solid #F2CE00;
+  border: 2px solid #346551;
   z-index: 1;
 }
 
@@ -1612,9 +1631,9 @@ fieldset {
   transition: 0.5s;
   border-radius: 10px;
   width: 100px;
-  border: 2px solid #F2CE00;
-  color: #F2CE00;
-  background-color: #998cc1;
+  border: 2px solid #346551;
+  color: #f8f8f8;
+  background-color: #346551;
   z-index: 2;
 }
 
@@ -1664,23 +1683,23 @@ fieldset {
 
 .color:nth-child(1) {
   background: #F8F8F1;
-  color: #0F0A0A;
+  color: #2E1C30;
 }
 
 .color:nth-child(2) {
-  background: #0F0A0A;
+  background: #2E1C30;
 }
 
 .color:nth-child(3) {
-  background: #C5979D;
+  background: #346551;
 }
 
 .color:nth-child(4) {
-  background: #F6AA1C;
+  background: #5CAD7A;
 }
 
 .color:nth-child(5) {
-  background: #422040;
+  background: #668BE0;
 }
 
 .color:hover {
@@ -1699,13 +1718,13 @@ fieldset {
 .accordeon-summary {
   padding: 15px;
   margin: 2%;
-  border-bottom: 2px solid #422040;
+  border-bottom: 4px solid #346551;
   border-radius: 5px;
   font-size: 20px;
   font-weight: bold;
   transition: 0.1s;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  background: #f3e2e3;
+  background: #72bd8d;
   display: block; /* This hides the summary's ::marker pseudo-element */
   cursor: pointer;
 }
