@@ -1102,7 +1102,8 @@ fieldset {
 }
 
 .I-icono-github {
-  width: 70%;
+  width: 80%;
+  height: 55%;
 }
 
 .foto-reto7 {
@@ -1743,9 +1744,9 @@ fieldset {
 }
 
 .video-reto7:hover {
-  -webkit-box-shadow: 2px 5px 36px 24px rgba(253,211,133,0.8);
-  -moz-box-shadow: 2px 5px 36px 24px rgba(253,211,133,0.8);
-  box-shadow: 2px 5px 36px 24px rgba(253,211,133,0.8);
+  -webkit-box-shadow: 2px 5px 20px 12px #5CAD7Acc;
+  -moz-box-shadow: 2px 5px 20px 12px #5CAD7Acc;
+  box-shadow: 2px 5px 20px 12px #5CAD7Acc;
   transition-duration: 0.5s;
 }
 
