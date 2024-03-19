@@ -480,6 +480,7 @@ footer p {
   font-weight: bold;
   text-align: justify;
   color: #5CAD7A;
+  margin-bottom: 8px;
 }
 
 .enunciat-lista2 {
@@ -1113,6 +1114,10 @@ fieldset {
   background-color: red;
 }
 
+.I-esquema-seguridad {
+  width: 30%;
+  border-radius: 10px;
+}
 
 
 /*      Reto textos       */
