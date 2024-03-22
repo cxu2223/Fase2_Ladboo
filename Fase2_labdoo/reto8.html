@@ -100,7 +100,7 @@
         <ul class="ul-index">
           <li class="li-index2"><a href="#pfsense">PFSense</a></li>
           <li class="li-index2"><a href="#instalacio">Instal·lació</a></li>
-          <li class="li-index2"><a href="#protecciodedades">Firewall</a></li>
+          <li class="li-index2"><a href="#firewall">Firewall</a></li>
           <li class="li-index2"><a href="#protecciodedades">Proxy (SQUID)</a></li>
         </ul>
       </div>
@@ -131,6 +131,29 @@
         <p class="enunciat-reto-p">Un cop sabem què és pfSense, el primer que farem serà fer la instal·lació. Hem creat un manual pas a pas per tenir una guia.</p>
         <div class="enunciat-reto-centro">
           <embed src="manual/manual-pfsense.pdf" class="embed-manual">
+        </div>
+      </div>
+
+      <div class="enunciat-reto-100" id="firewall">
+        <h3 class="enunciat-reto-titulo">FIREWALL</h3>
+        <p class="enunciat-reto-p">Per al firewall només configurarem una regla:</p>
+        <ul>
+          <li class="enunciat-lista">Control de descàrregues: Establir polítiques per controlar i gestionar descàrregues de grans volums, 
+            evitant la saturació de la xarxa i assegurant una distribució equitativa dels recursos.</li>
+        </ul>
+        <p class="enunciat-reto-p">
+          Controlar les descàrregues és una funció important en un firewall per diverses raons clau:</p>
+        <ul>
+          <li class="enunciat-lista2">- <b class="b-verde">Gestió  del consum de banda ampla:</b> Les descàrregues de grans volums poden consumir una quantitat significativa de la capacitat de la xarxa. 
+            Això és particularment important en entorns on la capacitat de la xarxa és limitada o compartida entre diversos usuaris o aplicacions.</li>
+          <li class="enunciat-lista2">- <b class="b-verde">Priorització del trànsit:</b> En llocs on hi ha múltiples usuaris o aplicacions que competeixen per recursos de xarxa limitats, com ara oficines, escoles o empreses, el firewall pot prioritzar cert tipus de trànsit sobre altres. 
+            Per exemple, es pot donar prioritat al trànsit crític per a les operacions de negocis mentre es limita la velocitat de les descàrregues no essencials.</li>
+          <li class="enunciat-lista2">- <b class="b-verde">Optimització del rendiment:</b> Limitar les descàrregues de grans volums pot ajudar a mantenir un bon rendiment de la xarxa per a tots els usuaris. 
+            Evita que una sola descàrrega monopolitzi tota la capacitat de la xarxa, garantint una distribució equitativa dels recursos i un funcionament fluid per a tothom.</li>
+        </ul>
+        <p class="enunciat-reto-p">Per implementar aquesta regla a PFSense hem d'anar a <b class="b-verde">Firewall > Traffic Shaper</b>.</p>
+        <div class="enunciat-reto-centro">
+          <img src="images/captura-firewall.png" alt="PFSense logo" class="I-topologia-mixto">
         </div>
       </div>
 
