@@ -217,6 +217,7 @@ footer p {
   margin: 1%;
   height: auto;
   border-radius: 10px;
+  display: flex;
 }
 .gif-sus4:hover, .gif-sus5:hover, .gif-sus9:hover, .gif-sus10:hover, .gif-sus11:hover, .gif-sus12:hover, .gif-sus15:hover, .gif-sus17:hover {
   -webkit-box-shadow: 2px -2px 24px 8px #668BE096;

@@ -101,7 +101,7 @@
           <li class="li-index2"><a href="#pfsense">PFSense</a></li>
           <li class="li-index2"><a href="#instalacio">Instal·lació</a></li>
           <li class="li-index2"><a href="#firewall">Firewall</a></li>
-          <li class="li-index2"><a href="#protecciodedades">Proxy (SQUID)</a></li>
+          <li class="li-index2"><a href="#proxy">Proxy (SQUID)</a></li>
         </ul>
       </div>
       <div class="enunciat-reto-70" id="pfsense">
@@ -154,6 +154,29 @@
         <p class="enunciat-reto-p">Per implementar aquesta regla a PFSense hem d'anar a <b class="b-verde">Firewall > Traffic Shaper</b>.</p>
         <div class="enunciat-reto-centro">
           <img src="images/captura-firewall.png" alt="PFSense logo" class="I-topologia-mixto">
+        </div>
+      </div>
+
+      <div class="enunciat-reto-100" id="proxy">
+        <h3 class="enunciat-reto-titulo">Proxy amb SQUID</h3>
+        <p class="enunciat-reto-p">Per al proxy configurarem les següentes regles:</p>
+        <ul>
+          <li class="enunciat-lista">Regles de control d'aplicacions: Establir regles per controlar l'ús d'aplicacions específiques a través de la xarxa, 
+            com ara jocs en línia o altres aplicacions no educatives que podrien afectar el rendiment.</li>
+          <li class="enunciat-lista">Planificació d'horaris d'accés: Configurar horaris d'accés per a determinades categories de llocs web, 
+            restringint l'accés durant hores no lectives o en períodes específics.</li>
+          <li class="enunciat-lista">Control d'accés basat en polítiques: Establir polítiques d'accés basades en rols o en grups d'usuaris. 
+            Això pot permetre diferents nivells d'accés a Internet segons els requisits educatius o els privilegis de l'usuari.</li>
+          <li class="enunciat-lista">Monitorització i informes: Implementar eines de monitorització i generació de informes per supervisar l'ús d'Internet i identificar patrons d'ús. 
+            Aquesta informació pot ser valuosa per a la planificació i la millora de l'entorn d'aprenentatge digital.
+          </li>
+        </ul>
+        <p class="enunciat-reto-p">El plugin de Squid a PFSense té moltes limitacions deixant una configuració molt bàsica i sense cumplir els requeriments mínims que volem, 
+          l'alternativa a aixó és instal·lar i configurar un proxy extern per desprès enllaçar-lo al nostre firewall de Pfsense. Per fer aquesta configuració hem d'anar a: <b class="b-verde">System > General Setup > Proxy Support</b></p>
+        <p class="enunciat-reto-p">Ens demanará el port i l'url del nostre Proxy, és a dir, la IP. En el nostre cas utilitzarem el proxy configurat a l'apartat de <a class="b-verde" href="reto10.html">Implementació de Servidors Linux i Windows</a>. 
+          Un cop configurat, haurà de quedar como a la captura de pantalla.</p>
+        <div class="enunciat-reto-centro">
+          <img src="images/captura-proxy.png" alt="PFSense logo" class="I-codigo">
         </div>
       </div>
 
