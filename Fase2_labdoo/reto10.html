@@ -6,6 +6,15 @@
     <link rel="icon" type="image/png" href="images/boladelmundo.png">
     <title>Projecte Labdoo</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+      function myFunction(id) {
+        let copyText = document.getElementById(id);
+        // Copy the text inside the text field
+        navigator.clipboard.writeText(copyText.textContent);
+        // Alert the copied text
+        alert("Comanda copiada: " + copyText.textContent);
+      }
+      </script>
   </head>
   <body>
     
@@ -67,14 +76,189 @@
           Aquest enfocament col·laboratiu amb els professionals garantirà una transició suau i efectiva cap a una infraestructura de xarxa més moderna i eficient.
         </p>
       </div>
+
       <div class="div-index">
         <header class="headerfase">
           <h2>CONTINGUT</h2>
         </header>
+        <p class="enunciat-reto-p">* Als dos servidors tindrem un adaptador configurat en xarxa NAT</p>
         <ul class="ul-index">
-          <li class="li-index"><a href="#estrategiacopiesseguretat">Estratègia Còpies de seguretat</a></li>
-          <li class="li-index"><a href="#protecciodedades">Protecció de dades</a></li>
+          <li class="li-index"><a href="#dhcp">DHCP</a></li>
+          <li class="li-index"><a href="#dns">DNS</a></li>
+          <li class="li-index"><a href="#protecciodedades">FTP</a></li>
+          <li class="li-index"><a href="#protecciodedades">Proxy</a></li>
+          <li class="li-index"><a href="#protecciodedades">Correu electrònic</a></li>
+          <li class="li-index"><a href="#protecciodedades">Servei web</a></li>
         </ul>
+      </div>
+
+      <div class="enunciat-reto-100" id="dhcp">
+        <h3 class="enunciat-reto-titulo">DHCP</h3>
+        <p class="enunciat-reto-p">El DHCP (Dynamic Host Configuration Protocol) és un protocol de xarxa que assigna automàticament adreces IP i altres paràmetres de configuració a dispositius connectats a la xarxa, com ara ordinadors o telèfons intel·ligents. 
+          Això evita la necessitat de configurar manualment cada dispositiu amb una adreça IP, simplificant la gestió de la xarxa.
+        <br>
+        El nostre servei DHCP està configurat de la següent manera:</p>
+        <ul>
+          <li class="enunciat-lista">La nostra ID de xarxa és: 10.0.2.0/24</li>
+          <li class="enunciat-lista">Les primeres 10 IP (10.0.2.1 - 10.0.2.11) queden excluides ja que les reservem per els professors, posteriorment ens servirà per diferenciar entre les restriccions dels alumnes i dels professors.</li>
+          <li class="enunciat-lista">Les IP es renovaran cada tres dies.</li>
+        </ul>
+    
+        <h4 class="enunciat-reto-titulo2">Windows Server</h4>
+        <p class="enunciat-reto-p">A continuació tindreu un <a class="b-verde" href="manual/manual-windows-dhcp.pdf">manual</a> de com fer tota aquesta configuració. 
+          Adicionalment a Windows hem creat un filtre per mantenir la nostra xarxa exclusiva per ordinadors.</p>
+        <div class="enunciat-reto-centro">
+          <embed src="manual/manual-windows-dhcp.pdf" class="embed-manual">
+        </div>
+
+        <h4 class="enunciat-reto-titulo2">Ubuntu Server</h4>
+        <p class="enunciat-reto-p">En aquest cas hem creat 5 subxarxes per dividir les 5 classes lògicament. Per al nostre Ubuntu Server haurem de fer diverses configuracions prèvies, primer ens assegurarem de tenir el programari actualitzat amb les següents comandes:</p>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p4">sudo apt update</p>
+            <button class="terminal-button" onclick="myFunction('p4')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p5">sudo apt upgrade</p>
+            <button class="terminal-button" onclick="myFunction('p5')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+
+        <p class="enunciat-reto-p">També instal·larem una interfície gràfica per facilitar-nos el treball.</p>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p6">sudo apt install –no-install-recommends lubuntu-desktop</p>
+            <button class="terminal-button" onclick="myFunction('p6')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+        
+        <p class="enunciat-reto-p">Un cop instalada la interfície gràfica, reiniciarem el servidor per començar a utilitzar-la.</p>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p7">sudo reboot</p>
+            <button class="terminal-button" onclick="myFunction('p7')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+
+        <p class="enunciat-reto-p">La última preparació prèvia serà configurar una IP estàtica al servidor, per això haurem de modificar el següent arxiu:</p>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p8">sudo nano /etc/netplan/00-installer-config.yaml</p>
+            <button class="terminal-button" onclick="myFunction('p8')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+        <p class="enunciat-reto-p">L'arxiu haurà de quedar així:</p>
+        <div class="enunciat-reto-centro">
+          <img src="images/archivo-yaml-ubuntu.png" alt="Arxiu YAML d'Ubuntu Server" class="I-codigo">
+        </div>
+
+        <p class="enunciat-reto-p">Un cop configurada la nostra IP estàtica haurem d'aplicar els canvis, és crucial que no surti cap error a l'hora d'executar la comanda, de lo contrari no podrem avançar al següent pas.</p>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p9">sudo netplan apply</p>
+            <button class="terminal-button" onclick="myFunction('p9')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+
+        <p class="enunciat-reto-p">Per a configurar DHCP a Ubuntu Server el primer que haurem de fer serà instal·lar el paquet isc-dhcp-server amb la següent comanda:</p>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p10">sudo apt-get install isc-dhcp-server</p>
+            <button class="terminal-button" onclick="myFunction('p10')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+
+        <p class="enunciat-reto-p">Desprès d'haver instal·lat el paquet, apagarem el nostre adaptador de xarxa per fer tota la configuració.</p>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p11">sudo ifconfig enp0s3 down</p>
+            <button class="terminal-button" onclick="myFunction('p11')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+
+        <p class="enunciat-reto-p">Per configurar les cinc subxarxes haurem de modificar el següent arxiu i afegir les següents lineas:</p>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p12">sudo nano /etc/dhcp/dhcpd.conf</p>
+            <button class="terminal-button" onclick="myFunction('p12')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+        <div class="enunciat-reto-centro">
+          <img src="images/archivo-dhcpd1.png" alt="Arxiu dhcpd.conf d'Ubuntu Server" class="I-dhcp">
+          <img src="images/archivo-dhcpd2.png" alt="Arxiu dhcpd.conf d'Ubuntu Server" class="I-dhcp">
+        </div>
+
+        <p class="enunciat-reto-p">Ara per indicar la interfície on volem que funcioni el DHCP haurem de modificar el següent arxiu i modificarem la següent linea:</p>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p13">sudo nano /etc/default/isc-dhcp-server</p>
+            <button class="terminal-button" onclick="myFunction('p13')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+        <div class="enunciat-reto-centro">
+          <img src="images/archivo-dhcp1.png" alt="Arxiu isc-dhcp-server d'Ubuntu Server" class="I-dhcp">
+        </div>
+
+        <p class="enunciat-reto-p">Un cop acabada la configuració engegarem el nostre adaptador de xarxa.</p>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p14">sudo ifconfig enp0s3 up</p>
+            <button class="terminal-button" onclick="myFunction('p14')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+
+        <p class="enunciat-reto-p">Per aplicar tots els canvis reiniciarem el servei DHCP.</p>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p15">sudo systemctl restart isc-dhcp-server</p>
+            <button class="terminal-button" onclick="myFunction('p15')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+
+        <p class="enunciat-reto-p">Per acabar, comprovarem que no tinguem cap error i el nostre servei estigui correctament engegat.</p>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p16">sudo systemctl status isc-dhcp-server</p>
+            <button class="terminal-button" onclick="myFunction('p16')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+        <div class="enunciat-reto-centro">
+          <img src="images/status-dhcp.png" alt="Comanda status dhcp d'Ubuntu Server" class="I-dhcp">
+        </div>
+
+        <p class="enunciat-reto-p">Per últim, verificarem que el nostre servei DHCP estigui donant les IP correctes des d'un client. 
+          El nostre client haurà de tenir la IP per DHCP i haurà de tenir una IP dins de les nostres subxarxes.</p>
+        <div class="enunciat-reto-centro">
+          <img src="images/windows-ipconfig.png" alt="Comanda ipconfig a Windows" class="I-dhcp">
+        </div>
+      </div>
+
+      <div class="enunciat-reto-100" id="dns">
+        <h3 class="enunciat-reto-titulo">DNS</h3>
+        <p class="enunciat-reto-p">
+          El DNS (Domain Name System) és un sistema que converteix els noms de domini, com ara "google.com", en adreces IP, que són números que les màquines utilitzen per identificar-se i comunicar-se entre si a la xarxa d'Internet. 
+          Bàsicament, funciona com una agenda telefònica per a la web, permetent als usuaris accedir als llocs web utilitzant noms de domini fàcils de recordar en lloc d'haver de recordar les seves adreces IP numèriques.
+          El nostre servei DNS està configurat amb el següent domini:</p>
+        <ul>
+          <li class="enunciat-lista">Windows: grupo1labdoo.org</li>
+          <li class="enunciat-lista">Ubuntu: grup1labdoo.org</li>
+        </ul>
+        <p class="enunciat-reto-p">Amb els següents hosts:</p>
+        <ul>
+          <li class="enunciat-lista">www</li>
+          <li class="enunciat-lista">ftp</li>
+          <li class="enunciat-lista">mail</li>
+        </ul>
+
+        <h4 class="enunciat-reto-titulo2">Windows Server</h4>
+        <p class="enunciat-reto-p">A continuació tindreu un <a class="b-verde" href="manual/manual-windows-dns.pdf" target="_blank">manual</a> de com fer tota aquesta configuració.</p>
+        <div class="enunciat-reto-centro">
+          <embed src="manual/manual-windows-dns.pdf" class="embed-manual">
+        </div>
+
+        <h4 class="enunciat-reto-titulo2">Ubuntu Server</h4>
       </div>
     </section>
 

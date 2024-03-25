@@ -1031,7 +1031,6 @@ fieldset {
   margin-left: 10%;
 }
 
-
 .I-topologia-mixto {
   width: 70%;
   border-radius: 10px;
@@ -1090,11 +1089,12 @@ fieldset {
 
 .I-icono-html {
   width: 60%;
+  border-radius: 10px;
 }
 
 .I-icono-css {
   width: 75%;
-
+  border-radius: 10px;
 }
 
 .I-icono-js {
@@ -1126,6 +1126,13 @@ fieldset {
   border-radius: 10px;
 }
 
+.I-dhcp {
+  width: 40%;
+  object-fit: cover;
+  margin: 0 15px 2% 15px;
+  border-radius: 10px;
+}
+
 
 /*      Reto textos       */
 .enunciat-reto-titulo {
@@ -1140,8 +1147,17 @@ fieldset {
   text-transform: uppercase;
 }
 
+.enunciat-reto-titulo2 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: justify;
+  color: #5a7ed1;
+  width: 100%;
+  padding-left: 15px;
+}
+
 .enunciat-reto-p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
   text-align: justify;
   margin: 0px;
@@ -1361,11 +1377,12 @@ fieldset {
 .contenedor-padre-card {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
   position: relative;
-  width: 300px;
+  width: 280px;
   height: 300px;
   border-radius: 10px;
   display: flex;
@@ -1374,7 +1391,7 @@ fieldset {
   overflow: hidden;
   perspective: 1000px;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  margin: 30px;
+  margin: 35px;
 }
 
 .card img {
@@ -1524,7 +1541,7 @@ fieldset {
 /*          Clipboard       */
 .terminal {
   display: flex;
-  width: 95%;
+  width: 85%;
   height: 75px;
   background: #346551;
   border-radius: 10px;
@@ -1542,7 +1559,7 @@ fieldset {
   color: #f8f8f8;
   padding: 0 0 0 3%;
   font-family: Lucida Console, monospace;
-  font-size: 20px;
+  font-size: 18px;
   width: 88%;
 }
 
