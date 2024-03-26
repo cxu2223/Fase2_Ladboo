@@ -1127,12 +1127,11 @@ fieldset {
 }
 
 .I-dhcp {
-  width: 40%;
+  width: 45%;
   object-fit: cover;
   margin: 0 15px 2% 15px;
   border-radius: 10px;
 }
-
 
 /*      Reto textos       */
 .enunciat-reto-titulo {

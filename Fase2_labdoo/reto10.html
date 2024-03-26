@@ -85,7 +85,7 @@
         <ul class="ul-index">
           <li class="li-index"><a href="#dhcp">DHCP</a></li>
           <li class="li-index"><a href="#dns">DNS</a></li>
-          <li class="li-index"><a href="#protecciodedades">FTP</a></li>
+          <li class="li-index"><a href="#ftp">FTP</a></li>
           <li class="li-index"><a href="#protecciodedades">Proxy</a></li>
           <li class="li-index"><a href="#protecciodedades">Correu electrònic</a></li>
           <li class="li-index"><a href="#protecciodedades">Servei web</a></li>
@@ -151,7 +151,7 @@
         </div>
         <p class="enunciat-reto-p">L'arxiu haurà de quedar així:</p>
         <div class="enunciat-reto-centro">
-          <img src="images/archivo-yaml-ubuntu.png" alt="Arxiu YAML d'Ubuntu Server" class="I-codigo">
+          <img src="images/archivo-yaml-ubuntu.png" alt="Arxiu YAML d'Ubuntu Server" class="I-dhcp">
         </div>
 
         <p class="enunciat-reto-p">Un cop configurada la nostra IP estàtica haurem d'aplicar els canvis, és crucial que no surti cap error a l'hora d'executar la comanda, de lo contrari no podrem avançar al següent pas.</p>
@@ -259,6 +259,161 @@
         </div>
 
         <h4 class="enunciat-reto-titulo2">Ubuntu Server</h4>
+        <ul>
+          <li class="enunciat-lista">És important que s'hagin seguit les instruccions de com mantenir el programari actualitzat i com configurar una IP estàtica per al servidor. Tot això explicat a l'apartat <a class="b-verde" href="#dhcp">DHCP</a>.</li>
+        </ul>
+
+        <p class="enunciat-reto-p">Per començar haurem d'instal·lar els paquets necessaris.</p>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p17">sudo apt-get install bind9 bind9utils bind9-doc</p>
+            <button class="terminal-button" onclick="myFunction('p17')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+
+        <p class="enunciat-reto-p">Un cop instal·lats, modificarem el següent arxiu i haurà de quedar com s'aprecia a la captura de pantalla:</p>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p18">sudo nano /etc/bind/named.conf.options</p>
+            <button class="terminal-button" onclick="myFunction('p18')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+        <div class="enunciat-reto-centro">
+          <img src="images/archivo-named-conf-options.png" alt="Arxiu named.conf.options a Ubuntu Server" class="I-dhcp">
+        </div>
+
+        <p class="enunciat-reto-p">Ara, modificarem aquest altre arxiu i haurà de quedar com s'aprecia a la captura de pantalla:</p>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p19">sudo nano /etc/default/named</p>
+            <button class="terminal-button" onclick="myFunction('p19')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+        <div class="enunciat-reto-centro">
+          <img src="images/archivo-named.png" alt="Arxiu named a Ubuntu Server" class="I-dhcp">
+        </div>
+
+        <p class="enunciat-reto-p">Ara, comprovarem que les modificacions que hem fet siguin correctes.</p>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p20">sudo named-checkconf</p>
+            <button class="terminal-button" onclick="myFunction('p20')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+
+        <p class="enunciat-reto-p">Passarem a modificar el següent arxiu de manera que quedi como a la captura de pantalla:</p>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p21">sudo nano /etc/bind/named.conf.local</p>
+            <button class="terminal-button" onclick="myFunction('p21')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+        <div class="enunciat-reto-centro">
+          <img src="images/archivo-named-conf-local.png" alt="Arxiu named.conf.local a Ubuntu Server" class="I-dhcp">
+        </div>
+
+        <p class="enunciat-reto-p">El següent que farem serà crear la zona directa i la zona inversa, haurem de crear una carpeta anomenada <b class="b-verde">zones</b> al directori <b class="b-verde">/etc/bind</b>.</p>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p22">sudo mkdir zones</p>
+            <button class="terminal-button" onclick="myFunction('p22')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+
+        <p class="enunciat-reto-p">Dins de la carpeta <b class="b-verde">zones</b> crearem un primer arxiu anomenat db.[EL VOSTRE DOMINI], en el nostre cas s'anomenará <b class="b-verde">db.grup1labdoo.org</b>i el deixarem com s'aprecia a la captura. Aquest arxiu serà la nostra zona directa.</p>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p22">sudo nano db.grup1labdoo.org</p>
+            <button class="terminal-button" onclick="myFunction('p22')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+        <div class="enunciat-reto-centro">
+          <img src="images/archivo-db1.png" alt="Arxiu zona directa a Ubuntu Server" class="I-dhcp">
+        </div>
+
+        <p class="enunciat-reto-p">Dins de la carpeta <b class="b-verde">zones</b> crearem un segon arxiu anomenat db.[LA VOSTRA IP INVERSA], en el nostre cas s'anomenará <b class="b-verde">db.2.0.10</b>i el deixarem com s'aprecia a la captura. Aquest arxiu serà la nostra zona inversa.</p>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p23">sudo nano db.2.0.10</p>
+            <button class="terminal-button" onclick="myFunction('p23')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+        <div class="enunciat-reto-centro">
+          <img src="images/archivo-db2.png" alt="Arxiu zona inversa a Ubuntu Server" class="I-dhcp">
+        </div>
+
+        <p class="enunciat-reto-p">Un cop creats els nostres arxius, aplicarem els canvis realitzats.</p>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p24">sudo named-checkzone grup1labdoodomain.org db.grup1labdooorg && db.02.0.10.in-addr.arpa db.02.0.10</p>
+            <button class="terminal-button" onclick="myFunction('p24')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+
+        <p class="enunciat-reto-p">Per últim reiniciarem el servei bind.</p>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p25">sudo systemctl restart bind9</p>
+            <button class="terminal-button" onclick="myFunction('p25')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+
+        <p class="enunciat-reto-p">Per comprovar que está en funcionament utilitzarem la comanda nslookup a un client.</p>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p26">nslookup www.grup1labdoo.org</p>
+            <button class="terminal-button" onclick="myFunction('p26')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+        <div class="enunciat-reto-centro">
+          <img src="images/nslookup-windows.png" alt="Comanda nslookup" class="I-dhcp">
+        </div>
+      </div>
+
+      <div class="enunciat-reto-100" id="ftp">
+        <h3 class="enunciat-reto-titulo">FTP</h3>
+        <p class="enunciat-reto-p">
+          FTP significa "File Transfer Protocol" (Protocol de Transferència de Fitxers). 
+          És un protocol de xarxa utilitzat per transferir fitxers entre ordinadors a través d'Internet o una xarxa local. 
+          Permet la transferència de fitxers entre un client (ordinador de l'usuari) i un servidor (ordinador remot) de manera eficient i segura. 
+          Els usuaris poden utilitzar clients FTP per connectar-se a servidors FTP i transferir fitxers, com ara documents, imatges o arxius de programari, entre els dos dispositius.
+          Per al nostre FTP comptarem amb la mateixa estructura d'usuaris explicada a l'apartat <a class="b-verde" href="reto4.html">CREACIÓ D'USUARIS I GESTIÓ DE PERMISOS I POLÍTIQUES I DIRECTIVES</a> i amb una estructura de permisos similar.</p>
+
+        <h4 class="enunciat-reto-titulo2">Windows Server</h4>
+        <p class="enunciat-reto-p">XXXXXXXXXXXXXXXXXXXX</p>
+
+        <h4 class="enunciat-reto-titulo2">Ubuntu Server</h4>
+        <ul>
+          <li class="enunciat-lista">És important que s'hagin seguit les instruccions de com mantenir el programari actualitzat i com configurar una IP estàtica per al servidor. Tot això explicat a l'apartat <a class="b-verde" href="#dhcp">DHCP</a>.</li>
+        </ul>
+
+        <p class="enunciat-reto-p">Primer de tot instal·larem el servei vsftpd.</p>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p27">sudo apt install vsftpd</p>
+            <button class="terminal-button" onclick="myFunction('p27')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+
+        <p class="enunciat-reto-p">Un cop instal·lat passarem a la configuració, l'arxiu haurà de quedar com a les captures de pantalla.</p>
+        <div class="enunciat-reto-centro">
+          <div class="terminal">
+            <p class="sudo" id="p28">sudo nano /etc/vsftpd.conf</p>
+            <button class="terminal-button" onclick="myFunction('p28')"><img src="images/clipboard.png" class="terminal-icono"></button>
+          </div>
+        </div>
+        <div class="enunciat-reto-centro">
+          <img src="images/archivo-vsftpd1.png" alt="Arxiu vsftpd.conf d'Ubuntu Server" class="I-dhcp">
+          <img src="images/archivo-vsftpd2.png" alt="Arxiu dhcpd.conf d'Ubuntu Server" class="I-dhcp">
+        </div>
+        <div class="enunciat-reto-centro">
+          <img src="images/archivo-vsftpd4.png" alt="Arxiu vsftpd.conf d'Ubuntu Server" class="I-dhcp">
+          <img src="images/archivo-vsftpd5.png" alt="Arxiu dhcpd.conf d'Ubuntu Server" class="I-dhcp">
+        </div>
+        <div class="enunciat-reto-centro">
+          <img src="images/archivo-vsftpd3.png" alt="Arxiu dhcpd.conf d'Ubuntu Server" class="I-dhcp">
+        </div>
+
       </div>
     </section>
 
